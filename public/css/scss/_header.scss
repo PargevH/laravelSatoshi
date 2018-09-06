@@ -1,0 +1,59 @@
+@import "font";
+@import "mixin";
+@import "common";
+@import "var";
+
+/***** Start Header scss ***/
+
+.main-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  height: 121px;
+  padding: unset !important;
+
+  .brand-logo {
+    padding: unset;
+    margin: unset;
+
+    img {
+    width: 100%;
+    }
+  }
+
+  ul {
+    padding: 23px 0;
+
+    li {
+      margin: 0 16px;
+
+      a, p {
+        padding-left: unset !important;
+        padding-right: unset !important;
+        font-size: 16px;
+        color: black !important;
+        font-family: "Poppins-Regular";
+
+        &:hover {
+          transition: 1000ms;
+          color: $mainColor !important;
+        }
+      }
+      p{
+        //padding: 0 34px 0 53px;
+      }
+    }
+  }
+  .navbarMenu{
+
+    li.active{
+      border-bottom: 2px solid $mainColor;
+    }
+  }
+}
+
+/****End header Scss ****/
+
+
+

@@ -1,0 +1,185 @@
+section {
+
+  &.pricing {
+    background-image: url(../img/bgsecond.png);
+    height: 630px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &.pricingType {
+    margin-top: 200px;
+
+    .starter {
+      h3{
+        font-family: 'Poppins-SemiBold';
+        font-size: 40px;
+        color: $mainColor;
+        margin-bottom: 41px;
+      }
+      p{
+        font-size: 20px;
+        font-family: 'Poppins-Light';
+        color: black;
+        margin-bottom: 104px;
+      }
+      .mainPoints {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+
+        ul {
+          list-style: none;
+
+          &:first-child{
+            margin-right: 40px;
+          }
+
+          li {
+            font-family: "Poppins-Regular";
+            font-size: 18px;
+            color: black;
+            padding-left: 1.5em;
+            position: relative;
+            margin-bottom: 30px;
+
+            &:after {
+              content: '';
+              height: 15px;
+              width: 15px;
+              background: #329F77;
+              display: block;
+              position: absolute;
+              border-radius: 50%;
+              top: 0.3em;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    .checkPrice {
+      ul{
+        list-style-type: none;
+
+        li {
+          display: flex;
+          height: 140px;
+          vertical-align: middle;
+          margin: unset;
+          margin-bottom: 26px;
+          background-color: white;
+
+          &.active{
+            background: #329f77;
+
+            .checkContainer{
+              color: white !important;
+            }
+          }
+
+          .radioButtons {
+            margin: auto;
+            width: 100%;
+            display: flex;
+            padding: 0 44px;
+
+            .checkContainer {
+              margin: unset;
+              display: block;
+              width: 100%;
+              float: left;
+              position: relative;
+              padding-left: 65px;
+              cursor: pointer;
+              font-size: 40px;
+              color: #4D8B45;
+              font-family: 'Poppins-SemiBold';
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+
+              input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+
+                &:checked ~ .checkmark {
+                  background-color: transparent;
+                  margin-top: 12px;
+                  border: 1px solid white;
+                }
+
+                &:checked ~ .checkmark:after {
+                  display: block;
+                }
+              }
+
+              .checkmark {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                height: 39px;
+                width: 39px;
+                border: 1px solid black;
+                border-radius: 50%;
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  display: none;
+                }
+
+                &:after {
+                  top: 7px;
+                  left: 7px;
+                  width: 23px;
+                  height: 23px;
+                  border-radius: 50%;
+                  background: white;
+                }
+              }
+
+              &:hover input ~ .checkmark {
+                background-color: $mainColor;
+                transition: 1500ms;
+              }
+            }
+            .rightSide{
+              font-family: 'Poppins-Light';
+              font-size: 25px;
+              color:black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.asweredQuest{
+    margin-bottom: 200px;
+
+    .sectionTitle{
+      h1{
+        color: black;
+        margin-bottom: 126px;
+      }
+    }
+    .quest{
+      margin-bottom: 87px;
+
+      .question{
+        font-size: 30px;
+        color: $mainColor;
+        font-family: "Poppins-Medium";
+        margin-bottom: 24px;
+      }
+      .answer{
+        font-family: 'Poppins-Light';
+        color: black;
+        font-size: 20px;
+      }
+    }
+  }
+}

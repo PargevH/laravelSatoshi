@@ -1,0 +1,64 @@
+*{
+  margin: unset;
+  padding: unset;
+}
+
+.content{
+  width: 85.5%;
+  margin: 0 auto;
+}
+body.home{
+  //background-color: $bodyBg;
+}
+body{
+
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+img{
+  width: 100%;
+}
+.sectionTitle{
+  padding-top: 235px;
+
+  h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Poppins-SemiBold';
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  p{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+}
+h3,p, h1, h2,h4{
+  margin: unset;
+}
+.tuotrialsPart{
+  h5{
+    font-family: "Poppins-SemiBold";
+    font-size: 40px;
+    text-align: center;
+  }
+}
+.no-padding{
+  padding: 0;
+  margin: 0;
+}
+
+input, textarea, select{
+  &:focus{
+    box-shadow: unset !important;
+    outline: unset !important;
+    border: unset !important;
+  }
+}

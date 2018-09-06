@@ -1,0 +1,211 @@
+@import "var";
+@import "mixin";
+@import "font";
+@import "common";
+@import "pricing";
+@import "resources";
+@import "signIn";
+@import "news";
+@import "contact";
+@import "header";
+@import "footer";
+
+section{
+  &.cryptoHome{
+    background-image: url("../img/bg.png");
+    height: 852px;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .cryptoMarkets{
+      margin-top: 200px;
+      width: 48%;
+
+      h1{
+        width: 90%;
+        margin-bottom: 66px;
+        font-size: 50px;
+        font-family: 'Poppins-Bold';
+      }
+
+      ul{
+        li{
+          margin-right: 75px;
+          padding-bottom: 14px;
+          position: relative;
+
+          &:hover{
+             .feed {
+              display: block;
+              width: 100%;
+              margin-left: -50%;
+            }
+          }
+
+           .feed {
+            position: absolute;
+            height: 2px;
+            width: 0;
+            background-color: $mainColor;
+            bottom: -4px;
+            left: 50%;
+          }
+
+          .anim-menu{/*lets anim*/
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+          }
+
+          span{
+            margin-right: 10px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+              vertical-align: middle;
+              fill: #39bc84;
+            }
+          }
+
+
+          a{
+            color: $mainColor;
+            font-size: 20px;
+            font-family: 'Poppins-Regular';
+          }
+        }
+      }
+
+      .learnMore{
+        margin: 100px 0;
+
+        .btn, .btn-def{
+          border: unset;
+          display: inline-block;
+          border-radius: unset;
+          padding: 10px 25px;
+          vertical-align: baseline;
+          height: 96%;
+          color: white;
+          background: $mainColor;
+          font-size: 25px;
+          font-family: 'Poppins-Regular';
+          margin-right: 30px;
+
+          &:hover{
+            background: transparent;
+            color: $mainColor;
+            transition: 1500ms;
+            border: 1px solid $mainColor;
+          }
+        }
+        .btn-def{
+          background: transparent;
+          border: 1px solid $mainColor;
+          color: $mainColor;
+          padding: 8px 25px;
+
+          &:hover{
+            background: $mainColor;
+            color: white;
+            transition: 1500ms;
+          }
+        }
+      }
+    }
+  }
+
+  &.prices{
+    padding-top: 180px;
+
+    .priceText{
+      padding-top: 80px;
+      width: 602px;
+
+      h1{
+        @include boxTitle;
+        margin-bottom: 35px;
+      }
+      span, p{
+        @include boxPar;
+      }
+    }
+    .groupImage{
+      ul{
+        list-style-type: none;
+        padding: unset;
+        li{
+          a{
+            img{
+              width: unset;
+            }
+          }
+          &:nth-child(2){
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  &.join-us {
+    margin-top: 130px;
+    margin-bottom: 116px;
+
+    h3 {
+      padding-bottom: 60px;
+      font-size: 40px;
+      font-family: 'Poppins-SemiBold';
+      color: black;
+    }
+
+    .subscribe {
+
+      form {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 790px;
+        margin: 0 auto;
+        height: 61px;
+
+        input {
+          width: 73%;
+          border: unset;
+          display: inline-block;
+          border-radius: unset;
+          height: 100%;
+          margin-right: 21px;
+          background: #E4E4E4;
+          padding: 0 27px;
+
+          &::-webkit-input-placeholder {
+            font-family: 'Poppins-Light';
+            font-size: 20px;
+            color: black;
+          }
+        }
+      }
+        .submitBtn {
+          border: unset;
+          padding-left: 48px;
+          padding-right: 48px;
+          display: inline-block;
+          border-radius: unset;
+          padding-top: unset;
+          padding-bottom: unset;
+          vertical-align: baseline;
+          height: 96%;
+          background: $mainColor;
+          font-size: 30px;
+          font-family: 'Poppins-SemiBold';
+
+      }
+    }
+  }
+
+}
+
+@import "media";

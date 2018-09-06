@@ -1,0 +1,331 @@
+@import "font";
+@import "mixin";
+@import "common";
+@import "var";
+
+/***Start Sign in and Sign Up  scss**/
+
+section {
+
+  &.signIn, &.signUp {
+    margin-bottom: 273px;
+    padding-top: 120px;
+
+    .content{
+      width: 100%;
+    }
+    .signInForms{
+      width: 70%;
+      margin: 0 auto;
+    }
+    .signInTitle {
+      margin-top: 81px;
+
+      h2 {
+        height: 39px;
+        font-family: 'Poppins-Bold';
+        font-size: 36px;
+        color: #3AC286;
+      }
+    }
+
+    .signInForm, .signUpForm {
+
+      p {
+        padding-top: 21px;
+        font-family: 'Poppins-Light';
+        font-size: 21px;
+        padding-bottom: 70px;
+      }
+
+      form {
+
+        input, span {
+          border-radius: unset;
+          border: unset;
+          background-color: #f1f1f1;
+          padding: 26px 28px;
+
+          &::-webkit-input-placeholder {
+            font-family: 'Poppins-Light';
+            font-size: 18px;
+            color: black;
+          }
+        }
+        input, span {
+          border-radius: unset;
+          border: unset;
+          background-color: #f1f1f1;
+          padding: 26px 28px;
+
+          &::-webkit-input-placeholder {
+            font-family: 'Poppins-Light';
+            font-size: 18px;
+            color: black;
+          }
+        }
+      }
+
+      .checkboxRemember{
+        margin-bottom: 48px;
+
+        .checkContainer {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          cursor: pointer;
+          font-size: 17px;
+          margin: 30px 0 45px 0;
+          color: #707070;
+          font-family: 'Poppins-Regular';
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .checkContainer input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 2px;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: white;
+          border: 1px solid #B4B4B4;
+        }
+
+        .checkContainer:hover input ~ .checkmark {
+          background-color: white;
+        }
+
+        .checkContainer input:checked ~ .checkmark {
+          background-color: #ffffff;
+          border: 1px solid #222544;
+        }
+
+        .checkContainer input[value='fixed']:checked ~ #fixed {
+          display: block;
+        }
+
+        .checkContainer input[value='hourly']:checked ~ #hourly {
+          display: block;
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        .checkContainer input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .checkContainer .checkmark:after {
+          left: 7px;
+          top: 4px;
+          width: 5px;
+          height: 10px;
+          border: solid #222544;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+
+      .login {
+        display: block;
+        width: 100%;
+        background: #35ae7d;
+        color: white;
+        font-size: 25px;
+        font-family: 'Poppins-Bold';
+        border-radius: unset;
+        border: unset;
+      }
+
+      .forgotPassword{
+        color: black;
+        font-size: 17px;
+        font-family: 'Poppins-Regular';
+        margin-top: 25px;
+      }
+
+      .signUpFace {
+        margin-top: 55px;
+        text-align: center;
+        margin-bottom: 264px;
+
+        p {
+          text-align: center;
+          padding: unset;
+          font-size: 20px;
+          font-family: 'Poppins-Regular';
+          position: relative;
+          margin-bottom: 40px;
+          color: black;
+
+          &:after, &:before {
+            position: absolute;
+            width: 20%;
+            content: '';
+            display: block;
+            top: 14px;
+            height: 1px;
+            background-color: #222544;
+          }
+
+          &:after {
+            left: 82px;
+          }
+
+          &:before {
+            right: 82px;
+          }
+        }
+
+        .loginWithOtherWay{
+          display: flex;
+          flex-direction: row;
+
+          a {
+            width: 211.5px;
+            height: 55.4px;
+            border: solid 1px #c2c2c2;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            background-color: #fff;
+            font-family: 'Poppins-Regular';
+            font-size: 21px;
+            margin: 0 10px;
+            padding: 12px 0;
+            color: black;
+            text-decoration: none;
+
+
+            svg{
+              width: 25px;
+              height: 25px;
+              margin-right: 20px;
+
+              path#twitter_1_{
+                fill: #03A9F4;
+              }
+            }
+
+            //img {
+            //  padding: 0 13px 0 0;
+            //  width: unset;
+            //}
+          }
+        }
+      }
+    }
+
+    .signUpForm {
+      p {
+        padding-bottom: 46px;
+      }
+
+      form {
+        .mainRegInput {
+          margin-bottom: 27px !important;
+        }
+      }
+
+      .login {
+        margin-bottom: 172px;
+      }
+    }
+
+    .signInImage {
+      img {
+      }
+    }
+
+    .postaJob {
+
+      div {
+        p {
+          font-size: 16px;
+          font-family: 'Poppins-Regular';
+          color: $mainColor;
+        }
+
+        form {
+
+          label, p {
+            font-family: 'Poppins-Regular';
+            font-size: 22px;
+            color: $mainColor;
+          }
+
+          input, textarea, select {
+            border-radius: unset;
+            border: unset;
+            padding: 17px 19px 16px 19px;
+            background-color: #f1f1f1;
+            font-size: 17px;
+            font-family: 'Poppins-Light';
+            color: $mainColor;
+
+            &::-webkit-input-placeholder {
+              font-size: 17px;
+              font-family: 'Poppins-Light';
+              color: $mainColor;
+            }
+          }
+
+          select {
+            height: unset !important;
+          }
+
+          input[value="fixed"]:checked ~ #fixed {
+            display: block;
+          }
+
+          input[value="hour"]:checked ~ #hourly {
+            display: block;
+          }
+
+          #fixed, #hourly {
+            margin: 20px 0;
+            display: none;
+          }
+          .fixedHourly {
+            display: block;
+            margin-bottom: 15px;
+          }
+        }
+
+        .postMyJob {
+          font-family: 'Poppins-Bold';
+          font-size: 20px;
+          color: white;
+          background-color: $mainColor;
+          padding: 17px 33px;
+          border: unset;
+          box-shadow: unset;
+          border-radius: unset;
+          margin-top: 74px;
+          margin-bottom: 156px;
+        }
+      }
+    }
+  }
+  &.signUp{
+    margin-bottom: 273px;
+  }
+}
+
+/***** End Sign in  and Sign Up  scss********/
+
+

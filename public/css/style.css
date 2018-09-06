@@ -1,0 +1,1338 @@
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../font/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url("../font/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../font/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url("../font/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url("../font/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url("../font/Poppins-Medium.ttf"); }
+
+* {
+  margin: unset;
+  padding: unset; }
+
+.content {
+  width: 85.5%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.sectionTitle {
+  padding-top: 235px; }
+  .sectionTitle h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Poppins-SemiBold';
+    text-align: center;
+    margin-bottom: 60px; }
+  .sectionTitle p {
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center; }
+
+h3, p, h1, h2, h4 {
+  margin: unset; }
+
+.tuotrialsPart h5 {
+  font-family: "Poppins-SemiBold";
+  font-size: 40px;
+  text-align: center; }
+
+.no-padding {
+  padding: 0;
+  margin: 0; }
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: unset !important;
+  outline: unset !important;
+  border: unset !important; }
+
+section.pricing {
+  background-image: url(../img/bgsecond.png);
+  height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+section.pricingType {
+  margin-top: 200px; }
+  section.pricingType .starter h3 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 40px;
+    color: #35AC7C;
+    margin-bottom: 41px; }
+  section.pricingType .starter p {
+    font-size: 20px;
+    font-family: 'Poppins-Light';
+    color: black;
+    margin-bottom: 104px; }
+  section.pricingType .starter .mainPoints {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+    section.pricingType .starter .mainPoints ul {
+      list-style: none; }
+      section.pricingType .starter .mainPoints ul:first-child {
+        margin-right: 40px; }
+      section.pricingType .starter .mainPoints ul li {
+        font-family: "Poppins-Regular";
+        font-size: 18px;
+        color: black;
+        padding-left: 1.5em;
+        position: relative;
+        margin-bottom: 30px; }
+        section.pricingType .starter .mainPoints ul li:after {
+          content: '';
+          height: 15px;
+          width: 15px;
+          background: #329F77;
+          display: block;
+          position: absolute;
+          border-radius: 50%;
+          top: 0.3em;
+          left: 0; }
+  section.pricingType .checkPrice ul {
+    list-style-type: none; }
+    section.pricingType .checkPrice ul li {
+      display: flex;
+      height: 140px;
+      vertical-align: middle;
+      margin: unset;
+      margin-bottom: 26px;
+      background-color: white; }
+      section.pricingType .checkPrice ul li.active {
+        background: #329f77; }
+        section.pricingType .checkPrice ul li.active .checkContainer {
+          color: white !important; }
+      section.pricingType .checkPrice ul li .radioButtons {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        padding: 0 44px; }
+        section.pricingType .checkPrice ul li .radioButtons .checkContainer {
+          margin: unset;
+          display: block;
+          width: 100%;
+          float: left;
+          position: relative;
+          padding-left: 65px;
+          cursor: pointer;
+          font-size: 40px;
+          color: #4D8B45;
+          font-family: 'Poppins-SemiBold';
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+          section.pricingType .checkPrice ul li .radioButtons .checkContainer input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer; }
+            section.pricingType .checkPrice ul li .radioButtons .checkContainer input:checked ~ .checkmark {
+              background-color: transparent;
+              margin-top: 12px;
+              border: 1px solid white; }
+            section.pricingType .checkPrice ul li .radioButtons .checkContainer input:checked ~ .checkmark:after {
+              display: block; }
+          section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            height: 39px;
+            width: 39px;
+            border: 1px solid black;
+            border-radius: 50%; }
+            section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none; }
+            section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark:after {
+              top: 7px;
+              left: 7px;
+              width: 23px;
+              height: 23px;
+              border-radius: 50%;
+              background: white; }
+          section.pricingType .checkPrice ul li .radioButtons .checkContainer:hover input ~ .checkmark {
+            background-color: #35AC7C;
+            transition: 1500ms; }
+        section.pricingType .checkPrice ul li .radioButtons .rightSide {
+          font-family: 'Poppins-Light';
+          font-size: 25px;
+          color: black; }
+
+section.asweredQuest {
+  margin-bottom: 200px; }
+  section.asweredQuest .sectionTitle h1 {
+    color: black;
+    margin-bottom: 126px; }
+  section.asweredQuest .quest {
+    margin-bottom: 87px; }
+    section.asweredQuest .quest .question {
+      font-size: 30px;
+      color: #35AC7C;
+      font-family: "Poppins-Medium";
+      margin-bottom: 24px; }
+    section.asweredQuest .quest .answer {
+      font-family: 'Poppins-Light';
+      color: black;
+      font-size: 20px; }
+
+section.tutorials .sectionTitle {
+  padding-top: 123px; }
+  section.tutorials .sectionTitle h1 {
+    color: black;
+    margin-bottom: 27px; }
+  section.tutorials .sectionTitle p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins-Light';
+    margin-bottom: 86px; }
+
+section.tutorials .tuotrialsPart {
+  height: 390px;
+  box-shadow: 0 0 1px 0px #707070; }
+  section.tutorials .tuotrialsPart .boxContent {
+    padding: 0 23px 0 23px; }
+    section.tutorials .tuotrialsPart .boxContent h5 {
+      margin: 40px 0 24px 0;
+      font-size: 30px;
+      height: 90px; }
+    section.tutorials .tuotrialsPart .boxContent p {
+      font-size: 20px;
+      color: black;
+      height: 130px;
+      text-align: center;
+      font-family: 'Poppins-Light'; }
+    section.tutorials .tuotrialsPart .boxContent a {
+      display: block;
+      text-align: center;
+      color: #3D4750;
+      width: 34%;
+      margin: 0 auto;
+      font-family: 'Poppins-SemiBold';
+      position: relative; }
+      section.tutorials .tuotrialsPart .boxContent a:hover .feed {
+        display: block;
+        width: 100%;
+        margin-left: -50%; }
+      section.tutorials .tuotrialsPart .boxContent a .feed {
+        position: absolute;
+        height: 2px;
+        width: 0;
+        background-color: #3D4750;
+        bottom: -4px;
+        left: 50%; }
+      section.tutorials .tuotrialsPart .boxContent a .anim-menu {
+        /*lets anim*/
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+
+section.tutorials .getStart .boxHeader {
+  height: 20px;
+  background-color: #35AC7C; }
+
+section.tutorials .getStart h5, section.tutorials .getStart a {
+  color: #35AC7C; }
+
+section.tutorials .userGuide .boxHeader {
+  height: 20px;
+  background-color: #3D4750; }
+
+section.tutorials .userGuide h5, section.tutorials .userGuide a {
+  color: #3D4750; }
+
+section.tutorials .howBuy .boxHeader {
+  height: 20px;
+  background-color: #1D7691; }
+
+section.tutorials .howBuy h5, section.tutorials .howBuy a {
+  color: #1D7691; }
+
+section.tutorials .info .boxHeader {
+  height: 20px;
+  background-color: #FFCE00; }
+
+section.tutorials .info h5, section.tutorials .info a {
+  color: #FFCE00; }
+
+section.cryptocurrency .sectionTitle h1 {
+  color: black;
+  margin-bottom: 27px !important; }
+
+section.cryptocurrency .sectionTitle p {
+  color: black;
+  margin-bottom: 87px;
+  font-size: 20px;
+  font-family: 'Poppins-Light'; }
+
+section.cryptocurrency .newToCryptocurrency {
+  box-shadow: 0 0 1px 0 #707070;
+  padding: 20px; }
+  section.cryptocurrency .newToCryptocurrency p {
+    color: black;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Poppins-SemiBold'; }
+  section.cryptocurrency .newToCryptocurrency a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins-SemiBold';
+    color: #35AC7C;
+    position: relative;
+    width: 35%;
+    margin: 0 auto 20px; }
+    section.cryptocurrency .newToCryptocurrency a:hover .feed {
+      display: block;
+      width: 100%;
+      margin-left: -50%; }
+    section.cryptocurrency .newToCryptocurrency a .feed {
+      position: absolute;
+      height: 2px;
+      width: 0;
+      background-color: #35AC7C;
+      bottom: -4px;
+      left: 50%; }
+    section.cryptocurrency .newToCryptocurrency a .anim-menu {
+      /*lets anim*/
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+
+section.lastPost {
+  margin: 137px 0; }
+  section.lastPost .lastPostContext p {
+    text-align: center;
+    font-family: 'Poppins-Light';
+    font-size: 20px;
+    color: black;
+    margin: 0 auto;
+    width: 64%; }
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../font/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url("../font/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../font/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url("../font/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url("../font/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url("../font/Poppins-Medium.ttf"); }
+
+* {
+  margin: unset;
+  padding: unset; }
+
+.content {
+  width: 85.5%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.sectionTitle {
+  padding-top: 235px; }
+  .sectionTitle h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Poppins-SemiBold';
+    text-align: center;
+    margin-bottom: 60px; }
+  .sectionTitle p {
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center; }
+
+h3, p, h1, h2, h4 {
+  margin: unset; }
+
+.tuotrialsPart h5 {
+  font-family: "Poppins-SemiBold";
+  font-size: 40px;
+  text-align: center; }
+
+.no-padding {
+  padding: 0;
+  margin: 0; }
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: unset !important;
+  outline: unset !important;
+  border: unset !important; }
+
+/***Start Sign in and Sign Up  scss**/
+section.signIn, section.signUp {
+  margin-bottom: 273px;
+  padding-top: 120px; }
+  section.signIn .content, section.signUp .content {
+    width: 100%; }
+  section.signIn .signInForms, section.signUp .signInForms {
+    width: 70%;
+    margin: 0 auto; }
+  section.signIn .signInTitle, section.signUp .signInTitle {
+    margin-top: 81px; }
+    section.signIn .signInTitle h2, section.signUp .signInTitle h2 {
+      height: 39px;
+      font-family: 'Poppins-Bold';
+      font-size: 36px;
+      color: #3AC286; }
+  section.signIn .signInForm p, section.signIn .signUpForm p, section.signUp .signInForm p, section.signUp .signUpForm p {
+    padding-top: 21px;
+    font-family: 'Poppins-Light';
+    font-size: 21px;
+    padding-bottom: 70px; }
+  section.signIn .signInForm form input, section.signIn .signInForm form span, section.signIn .signUpForm form input, section.signIn .signUpForm form span, section.signUp .signInForm form input, section.signUp .signInForm form span, section.signUp .signUpForm form input, section.signUp .signUpForm form span {
+    border-radius: unset;
+    border: unset;
+    background-color: #f1f1f1;
+    padding: 26px 28px; }
+    section.signIn .signInForm form input::-webkit-input-placeholder, section.signIn .signInForm form span::-webkit-input-placeholder, section.signIn .signUpForm form input::-webkit-input-placeholder, section.signIn .signUpForm form span::-webkit-input-placeholder, section.signUp .signInForm form input::-webkit-input-placeholder, section.signUp .signInForm form span::-webkit-input-placeholder, section.signUp .signUpForm form input::-webkit-input-placeholder, section.signUp .signUpForm form span::-webkit-input-placeholder {
+      font-family: 'Poppins-Light';
+      font-size: 18px;
+      color: black; }
+  section.signIn .signInForm form input, section.signIn .signInForm form span, section.signIn .signUpForm form input, section.signIn .signUpForm form span, section.signUp .signInForm form input, section.signUp .signInForm form span, section.signUp .signUpForm form input, section.signUp .signUpForm form span {
+    border-radius: unset;
+    border: unset;
+    background-color: #f1f1f1;
+    padding: 26px 28px; }
+    section.signIn .signInForm form input::-webkit-input-placeholder, section.signIn .signInForm form span::-webkit-input-placeholder, section.signIn .signUpForm form input::-webkit-input-placeholder, section.signIn .signUpForm form span::-webkit-input-placeholder, section.signUp .signInForm form input::-webkit-input-placeholder, section.signUp .signInForm form span::-webkit-input-placeholder, section.signUp .signUpForm form input::-webkit-input-placeholder, section.signUp .signUpForm form span::-webkit-input-placeholder {
+      font-family: 'Poppins-Light';
+      font-size: 18px;
+      color: black; }
+  section.signIn .signInForm .checkboxRemember, section.signIn .signUpForm .checkboxRemember, section.signUp .signInForm .checkboxRemember, section.signUp .signUpForm .checkboxRemember {
+    margin-bottom: 48px; }
+    section.signIn .signInForm .checkboxRemember .checkContainer, section.signIn .signUpForm .checkboxRemember .checkContainer, section.signUp .signInForm .checkboxRemember .checkContainer, section.signUp .signUpForm .checkboxRemember .checkContainer {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+      font-size: 17px;
+      margin: 30px 0 45px 0;
+      color: #707070;
+      font-family: 'Poppins-Regular';
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    section.signIn .signInForm .checkboxRemember .checkContainer input, section.signIn .signUpForm .checkboxRemember .checkContainer input, section.signUp .signInForm .checkboxRemember .checkContainer input, section.signUp .signUpForm .checkboxRemember .checkContainer input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    section.signIn .signInForm .checkboxRemember .checkmark, section.signIn .signUpForm .checkboxRemember .checkmark, section.signUp .signInForm .checkboxRemember .checkmark, section.signUp .signUpForm .checkboxRemember .checkmark {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      border: 1px solid #B4B4B4; }
+    section.signIn .signInForm .checkboxRemember .checkContainer:hover input ~ .checkmark, section.signIn .signUpForm .checkboxRemember .checkContainer:hover input ~ .checkmark, section.signUp .signInForm .checkboxRemember .checkContainer:hover input ~ .checkmark, section.signUp .signUpForm .checkboxRemember .checkContainer:hover input ~ .checkmark {
+      background-color: white; }
+    section.signIn .signInForm .checkboxRemember .checkContainer input:checked ~ .checkmark, section.signIn .signUpForm .checkboxRemember .checkContainer input:checked ~ .checkmark, section.signUp .signInForm .checkboxRemember .checkContainer input:checked ~ .checkmark, section.signUp .signUpForm .checkboxRemember .checkContainer input:checked ~ .checkmark {
+      background-color: #ffffff;
+      border: 1px solid #222544; }
+    section.signIn .signInForm .checkboxRemember .checkContainer input[value='fixed']:checked ~ #fixed, section.signIn .signUpForm .checkboxRemember .checkContainer input[value='fixed']:checked ~ #fixed, section.signUp .signInForm .checkboxRemember .checkContainer input[value='fixed']:checked ~ #fixed, section.signUp .signUpForm .checkboxRemember .checkContainer input[value='fixed']:checked ~ #fixed {
+      display: block; }
+    section.signIn .signInForm .checkboxRemember .checkContainer input[value='hourly']:checked ~ #hourly, section.signIn .signUpForm .checkboxRemember .checkContainer input[value='hourly']:checked ~ #hourly, section.signUp .signInForm .checkboxRemember .checkContainer input[value='hourly']:checked ~ #hourly, section.signUp .signUpForm .checkboxRemember .checkContainer input[value='hourly']:checked ~ #hourly {
+      display: block; }
+    section.signIn .signInForm .checkboxRemember .checkmark:after, section.signIn .signUpForm .checkboxRemember .checkmark:after, section.signUp .signInForm .checkboxRemember .checkmark:after, section.signUp .signUpForm .checkboxRemember .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    section.signIn .signInForm .checkboxRemember .checkContainer input:checked ~ .checkmark:after, section.signIn .signUpForm .checkboxRemember .checkContainer input:checked ~ .checkmark:after, section.signUp .signInForm .checkboxRemember .checkContainer input:checked ~ .checkmark:after, section.signUp .signUpForm .checkboxRemember .checkContainer input:checked ~ .checkmark:after {
+      display: block; }
+    section.signIn .signInForm .checkboxRemember .checkContainer .checkmark:after, section.signIn .signUpForm .checkboxRemember .checkContainer .checkmark:after, section.signUp .signInForm .checkboxRemember .checkContainer .checkmark:after, section.signUp .signUpForm .checkboxRemember .checkContainer .checkmark:after {
+      left: 7px;
+      top: 4px;
+      width: 5px;
+      height: 10px;
+      border: solid #222544;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  section.signIn .signInForm .login, section.signIn .signUpForm .login, section.signUp .signInForm .login, section.signUp .signUpForm .login {
+    display: block;
+    width: 100%;
+    background: #35ae7d;
+    color: white;
+    font-size: 25px;
+    font-family: 'Poppins-Bold';
+    border-radius: unset;
+    border: unset; }
+  section.signIn .signInForm .forgotPassword, section.signIn .signUpForm .forgotPassword, section.signUp .signInForm .forgotPassword, section.signUp .signUpForm .forgotPassword {
+    color: black;
+    font-size: 17px;
+    font-family: 'Poppins-Regular';
+    margin-top: 25px; }
+  section.signIn .signInForm .signUpFace, section.signIn .signUpForm .signUpFace, section.signUp .signInForm .signUpFace, section.signUp .signUpForm .signUpFace {
+    margin-top: 55px;
+    text-align: center;
+    margin-bottom: 264px; }
+    section.signIn .signInForm .signUpFace p, section.signIn .signUpForm .signUpFace p, section.signUp .signInForm .signUpFace p, section.signUp .signUpForm .signUpFace p {
+      text-align: center;
+      padding: unset;
+      font-size: 20px;
+      font-family: 'Poppins-Regular';
+      position: relative;
+      margin-bottom: 40px;
+      color: black; }
+      section.signIn .signInForm .signUpFace p:after, section.signIn .signInForm .signUpFace p:before, section.signIn .signUpForm .signUpFace p:after, section.signIn .signUpForm .signUpFace p:before, section.signUp .signInForm .signUpFace p:after, section.signUp .signInForm .signUpFace p:before, section.signUp .signUpForm .signUpFace p:after, section.signUp .signUpForm .signUpFace p:before {
+        position: absolute;
+        width: 20%;
+        content: '';
+        display: block;
+        top: 14px;
+        height: 1px;
+        background-color: #222544; }
+      section.signIn .signInForm .signUpFace p:after, section.signIn .signUpForm .signUpFace p:after, section.signUp .signInForm .signUpFace p:after, section.signUp .signUpForm .signUpFace p:after {
+        left: 82px; }
+      section.signIn .signInForm .signUpFace p:before, section.signIn .signUpForm .signUpFace p:before, section.signUp .signInForm .signUpFace p:before, section.signUp .signUpForm .signUpFace p:before {
+        right: 82px; }
+    section.signIn .signInForm .signUpFace .loginWithOtherWay, section.signIn .signUpForm .signUpFace .loginWithOtherWay, section.signUp .signInForm .signUpFace .loginWithOtherWay, section.signUp .signUpForm .signUpFace .loginWithOtherWay {
+      display: flex;
+      flex-direction: row; }
+      section.signIn .signInForm .signUpFace .loginWithOtherWay a, section.signIn .signUpForm .signUpFace .loginWithOtherWay a, section.signUp .signInForm .signUpFace .loginWithOtherWay a, section.signUp .signUpForm .signUpFace .loginWithOtherWay a {
+        width: 211.5px;
+        height: 55.4px;
+        border: solid 1px #c2c2c2;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color: #fff;
+        font-family: 'Poppins-Regular';
+        font-size: 21px;
+        margin: 0 10px;
+        padding: 12px 0;
+        color: black;
+        text-decoration: none; }
+        section.signIn .signInForm .signUpFace .loginWithOtherWay a svg, section.signIn .signUpForm .signUpFace .loginWithOtherWay a svg, section.signUp .signInForm .signUpFace .loginWithOtherWay a svg, section.signUp .signUpForm .signUpFace .loginWithOtherWay a svg {
+          width: 25px;
+          height: 25px;
+          margin-right: 20px; }
+          section.signIn .signInForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signIn .signUpForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signUp .signInForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signUp .signUpForm .signUpFace .loginWithOtherWay a svg path#twitter_1_ {
+            fill: #03A9F4; }
+  section.signIn .signUpForm p, section.signUp .signUpForm p {
+    padding-bottom: 46px; }
+  section.signIn .signUpForm form .mainRegInput, section.signUp .signUpForm form .mainRegInput {
+    margin-bottom: 27px !important; }
+  section.signIn .signUpForm .login, section.signUp .signUpForm .login {
+    margin-bottom: 172px; }
+  section.signIn .postaJob div p, section.signUp .postaJob div p {
+    font-size: 16px;
+    font-family: 'Poppins-Regular';
+    color: #35AC7C; }
+  section.signIn .postaJob div form label, section.signIn .postaJob div form p, section.signUp .postaJob div form label, section.signUp .postaJob div form p {
+    font-family: 'Poppins-Regular';
+    font-size: 22px;
+    color: #35AC7C; }
+  section.signIn .postaJob div form input, section.signIn .postaJob div form textarea, section.signIn .postaJob div form select, section.signUp .postaJob div form input, section.signUp .postaJob div form textarea, section.signUp .postaJob div form select {
+    border-radius: unset;
+    border: unset;
+    padding: 17px 19px 16px 19px;
+    background-color: #f1f1f1;
+    font-size: 17px;
+    font-family: 'Poppins-Light';
+    color: #35AC7C; }
+    section.signIn .postaJob div form input::-webkit-input-placeholder, section.signIn .postaJob div form textarea::-webkit-input-placeholder, section.signIn .postaJob div form select::-webkit-input-placeholder, section.signUp .postaJob div form input::-webkit-input-placeholder, section.signUp .postaJob div form textarea::-webkit-input-placeholder, section.signUp .postaJob div form select::-webkit-input-placeholder {
+      font-size: 17px;
+      font-family: 'Poppins-Light';
+      color: #35AC7C; }
+  section.signIn .postaJob div form select, section.signUp .postaJob div form select {
+    height: unset !important; }
+  section.signIn .postaJob div form input[value="fixed"]:checked ~ #fixed, section.signUp .postaJob div form input[value="fixed"]:checked ~ #fixed {
+    display: block; }
+  section.signIn .postaJob div form input[value="hour"]:checked ~ #hourly, section.signUp .postaJob div form input[value="hour"]:checked ~ #hourly {
+    display: block; }
+  section.signIn .postaJob div form #fixed, section.signIn .postaJob div form #hourly, section.signUp .postaJob div form #fixed, section.signUp .postaJob div form #hourly {
+    margin: 20px 0;
+    display: none; }
+  section.signIn .postaJob div form .fixedHourly, section.signUp .postaJob div form .fixedHourly {
+    display: block;
+    margin-bottom: 15px; }
+  section.signIn .postaJob div .postMyJob, section.signUp .postaJob div .postMyJob {
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+    color: white;
+    background-color: #35AC7C;
+    padding: 17px 33px;
+    border: unset;
+    box-shadow: unset;
+    border-radius: unset;
+    margin-top: 74px;
+    margin-bottom: 156px; }
+
+section.signUp {
+  margin-bottom: 273px; }
+
+/***** End Sign in  and Sign Up  scss********/
+section.page-wrap {
+  background-image: url(../img/curve-c.png);
+  background-repeat: repeat;
+  background-size: cover;
+  transform: rotate(180deg); }
+  section.page-wrap .sectionTitle {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: unset;
+    margin-top: 166px; }
+    section.page-wrap .sectionTitle h1 {
+      margin-bottom: 30px; }
+    section.page-wrap .sectionTitle p {
+      font-family: 'Poppins-Light';
+      margin-bottom: 40px; }
+    section.page-wrap .sectionTitle input {
+      border: unset;
+      border-radius: unset;
+      background: #f9f9f9;
+      padding: 20px 30px; }
+    section.page-wrap .sectionTitle .subsButton {
+      background: #35ac7c;
+      color: white;
+      font-size: 20px;
+      font-family: "Poppins-Bold";
+      border: 1px solid #35ac7c; }
+  section.page-wrap .page-header {
+    height: 750px;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+section.newsPost {
+  width: 100%;
+  margin-top: -190px; }
+  section.newsPost .mainPost {
+    background: linear-gradient(45deg, #1D7691, #ffe658 190%);
+    min-height: 340px;
+    margin-bottom: 50px; }
+  section.newsPost .post {
+    background-image: url(../img/curve-dots-white-small.png);
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    padding: 1.5rem 2rem; }
+    section.newsPost .post .post__title {
+      color: white;
+      font-family: 'Poppins-Bold';
+      font-size: 37px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: initial;
+      text-align: center;
+      height: 115px; }
+    section.newsPost .post .post__author {
+      display: flex;
+      flex-direction: row; }
+      section.newsPost .post .post__author .photo img {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px; }
+      section.newsPost .post .post__author .name {
+        font-size: 20px;
+        font-family: 'Poppins-Light';
+        color: white; }
+      section.newsPost .post .post__author .post__date {
+        align-self: flex-end;
+        width: 50%;
+        font-size: 20px;
+        font-family: 'Poppins-Light';
+        color: white;
+        text-align: right; }
+    section.newsPost .post .post__context {
+      padding: 10px; }
+      section.newsPost .post .post__context p {
+        padding: 10px;
+        color: white;
+        margin: 20px 0;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Poppins-Light"; }
+  section.newsPost .loadMore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    section.newsPost .loadMore button {
+      font-family: 'Poppins-Bold';
+      font-size: 25px;
+      padding: 19px 91px;
+      color: white;
+      background-color: #35AC7C;
+      border-radius: unset;
+      border: unset;
+      margin-top: 14px;
+      margin-bottom: 207px; }
+      section.newsPost .loadMore button:hover {
+        background: transparent;
+        border: 1px solid #35AC7C;
+        color: #35AC7C;
+        transition: 1500ms; }
+
+section.map {
+  height: 464px; }
+  section.map iframe {
+    height: 100%; }
+
+section.contactForm {
+  margin-top: 161px; }
+  section.contactForm .columeTitle h3 {
+    font-family: "Poppins-Bold";
+    font-size: 39px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 48px; }
+  section.contactForm .mainContactInfo {
+    padding-top: 20px; }
+    section.contactForm .mainContactInfo h5 {
+      font-family: 'Poppins-Regular';
+      font-size: 25px;
+      color: black;
+      margin-bottom: 15px; }
+    section.contactForm .mainContactInfo p {
+      font-size: 19px;
+      font-family: 'Poppins-Light';
+      margin-bottom: 40px; }
+  section.contactForm .mainForm form input, section.contactForm .mainForm form textarea {
+    background-color: #EBEBEB;
+    border: unset;
+    border-radius: unset;
+    padding: 23px 30px;
+    resize: unset;
+    margin-bottom: 30px; }
+    section.contactForm .mainForm form input::-webkit-input-placeholder, section.contactForm .mainForm form textarea::-webkit-input-placeholder {
+      font-size: 19px;
+      color: black;
+      font-family: 'Poppins-Light'; }
+  section.contactForm .mainForm form button {
+    font-family: 'Poppins-Bold';
+    font-size: 25px;
+    padding: 19px 91px;
+    color: white;
+    background-color: #35AC7C;
+    border-radius: unset;
+    border: unset;
+    margin-top: 14px;
+    margin-bottom: 207px; }
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../font/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url("../font/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../font/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url("../font/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url("../font/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url("../font/Poppins-Medium.ttf"); }
+
+* {
+  margin: unset;
+  padding: unset; }
+
+.content {
+  width: 85.5%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.sectionTitle {
+  padding-top: 235px; }
+  .sectionTitle h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Poppins-SemiBold';
+    text-align: center;
+    margin-bottom: 60px; }
+  .sectionTitle p {
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center; }
+
+h3, p, h1, h2, h4 {
+  margin: unset; }
+
+.tuotrialsPart h5 {
+  font-family: "Poppins-SemiBold";
+  font-size: 40px;
+  text-align: center; }
+
+.no-padding {
+  padding: 0;
+  margin: 0; }
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: unset !important;
+  outline: unset !important;
+  border: unset !important; }
+
+/***** Start Header scss ***/
+.main-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  height: 121px;
+  padding: unset !important; }
+  .main-navbar .brand-logo {
+    padding: unset;
+    margin: unset; }
+    .main-navbar .brand-logo img {
+      width: 100%; }
+  .main-navbar ul {
+    padding: 23px 0; }
+    .main-navbar ul li {
+      margin: 0 16px; }
+      .main-navbar ul li a, .main-navbar ul li p {
+        padding-left: unset !important;
+        padding-right: unset !important;
+        font-size: 16px;
+        color: black !important;
+        font-family: "Poppins-Regular"; }
+        .main-navbar ul li a:hover, .main-navbar ul li p:hover {
+          transition: 1000ms;
+          color: #35AC7C !important; }
+  .main-navbar .navbarMenu li.active {
+    border-bottom: 2px solid #35AC7C; }
+
+/****End header Scss ****/
+footer {
+  border-top: 1px solid #C2C2C2;
+  padding: 70px 0 27px; }
+  footer ul {
+    margin-bottom: 34px; }
+  footer .copyRight p {
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: black; }
+
+section.cryptoHome {
+  background-image: url("../img/bg.png");
+  height: 852px;
+  background-repeat: no-repeat;
+  background-position: right; }
+  section.cryptoHome .cryptoMarkets {
+    margin-top: 200px;
+    width: 48%; }
+    section.cryptoHome .cryptoMarkets h1 {
+      width: 90%;
+      margin-bottom: 66px;
+      font-size: 50px;
+      font-family: 'Poppins-Bold'; }
+    section.cryptoHome .cryptoMarkets ul li {
+      margin-right: 75px;
+      padding-bottom: 14px;
+      position: relative; }
+      section.cryptoHome .cryptoMarkets ul li:hover .feed {
+        display: block;
+        width: 100%;
+        margin-left: -50%; }
+      section.cryptoHome .cryptoMarkets ul li .feed {
+        position: absolute;
+        height: 2px;
+        width: 0;
+        background-color: #35AC7C;
+        bottom: -4px;
+        left: 50%; }
+      section.cryptoHome .cryptoMarkets ul li .anim-menu {
+        /*lets anim*/
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+      section.cryptoHome .cryptoMarkets ul li span {
+        margin-right: 10px; }
+        section.cryptoHome .cryptoMarkets ul li span svg {
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+          fill: #39bc84; }
+      section.cryptoHome .cryptoMarkets ul li a {
+        color: #35AC7C;
+        font-size: 20px;
+        font-family: 'Poppins-Regular'; }
+    section.cryptoHome .cryptoMarkets .learnMore {
+      margin: 100px 0; }
+      section.cryptoHome .cryptoMarkets .learnMore .btn, section.cryptoHome .cryptoMarkets .learnMore .btn-def {
+        border: unset;
+        display: inline-block;
+        border-radius: unset;
+        padding: 10px 25px;
+        vertical-align: baseline;
+        height: 96%;
+        color: white;
+        background: #35AC7C;
+        font-size: 25px;
+        font-family: 'Poppins-Regular';
+        margin-right: 30px; }
+        section.cryptoHome .cryptoMarkets .learnMore .btn:hover, section.cryptoHome .cryptoMarkets .learnMore .btn-def:hover {
+          background: transparent;
+          color: #35AC7C;
+          transition: 1500ms;
+          border: 1px solid #35AC7C; }
+      section.cryptoHome .cryptoMarkets .learnMore .btn-def {
+        background: transparent;
+        border: 1px solid #35AC7C;
+        color: #35AC7C;
+        padding: 8px 25px; }
+        section.cryptoHome .cryptoMarkets .learnMore .btn-def:hover {
+          background: #35AC7C;
+          color: white;
+          transition: 1500ms; }
+
+section.prices {
+  padding-top: 180px; }
+  section.prices .priceText {
+    padding-top: 80px;
+    width: 602px; }
+    section.prices .priceText h1 {
+      color: #35AC7C;
+      font-size: 50px;
+      font-family: "Poppins-SemiBold";
+      margin-bottom: 35px; }
+    section.prices .priceText span, section.prices .priceText p {
+      color: black;
+      font-size: 25px;
+      font-family: 'Poppins-Light'; }
+  section.prices .groupImage ul {
+    list-style-type: none;
+    padding: unset; }
+    section.prices .groupImage ul li a img {
+      width: unset; }
+    section.prices .groupImage ul li:nth-child(2) {
+      margin-right: 50px; }
+
+section.join-us {
+  margin-top: 130px;
+  margin-bottom: 116px; }
+  section.join-us h3 {
+    padding-bottom: 60px;
+    font-size: 40px;
+    font-family: 'Poppins-SemiBold';
+    color: black; }
+  section.join-us .subscribe form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 790px;
+    margin: 0 auto;
+    height: 61px; }
+    section.join-us .subscribe form input {
+      width: 73%;
+      border: unset;
+      display: inline-block;
+      border-radius: unset;
+      height: 100%;
+      margin-right: 21px;
+      background: #E4E4E4;
+      padding: 0 27px; }
+      section.join-us .subscribe form input::-webkit-input-placeholder {
+        font-family: 'Poppins-Light';
+        font-size: 20px;
+        color: black; }
+  section.join-us .subscribe .submitBtn {
+    border: unset;
+    padding-left: 48px;
+    padding-right: 48px;
+    display: inline-block;
+    border-radius: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+    vertical-align: baseline;
+    height: 96%;
+    background: #35AC7C;
+    font-size: 30px;
+    font-family: 'Poppins-SemiBold'; }
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  section.prices {
+    padding-top: 50px; }
+    section.prices:first-child {
+      padding-top: 180px; }
+    section.prices .priceText {
+      padding-top: 80px;
+      width: auto; }
+      section.prices .priceText h1 {
+        font-size: 35px; }
+      section.prices .priceText p {
+        font-size: 18px; }
+  section.cryptoHome {
+    height: auto;
+    background-position: left; }
+    section.cryptoHome .cryptoMarkets {
+      margin-top: 100px;
+      width: 100%; }
+      section.cryptoHome .cryptoMarkets h1 {
+        width: 100%;
+        font-size: 30px; }
+      section.cryptoHome .cryptoMarkets ul li {
+        width: 100% !important;
+        margin-right: 0 !important; }
+        section.cryptoHome .cryptoMarkets ul li a {
+          color: black;
+          font-size: 17px; }
+  section.join-us h3 {
+    font-size: 24px; }
+  section.join-us .subscribe form {
+    flex-wrap: wrap;
+    width: auto; }
+    section.join-us .subscribe form input {
+      width: 100%;
+      margin-right: unset; }
+    section.join-us .subscribe form .submitBtn {
+      margin: 25px auto;
+      font-size: 18px; }
+  section.tutorials .sectionTitle {
+    padding-top: 60px; }
+  section.tutorials .tuotrialsPart {
+    height: auto;
+    margin: 20px 0; }
+    section.tutorials .tuotrialsPart .boxContent h5 {
+      margin: 30px 0 18px 0;
+      font-size: 20px;
+      height: 90px; }
+    section.tutorials .tuotrialsPart .boxContent p {
+      font-size: 17px; }
+    section.tutorials .tuotrialsPart .boxContent a {
+      font-size: 18px;
+      padding-bottom: 30px; }
+  section.cryptocurrency .sectionTitle h1 {
+    color: black;
+    margin-bottom: 27px !important; }
+  section.cryptocurrency .sectionTitle p {
+    color: black;
+    margin-bottom: 87px;
+    font-size: 20px;
+    font-family: 'Poppins-Light'; }
+  section.cryptocurrency .newToCryptocurrency {
+    box-shadow: 0 0 1px 0 #707070;
+    margin: 20px 0; }
+    section.cryptocurrency .newToCryptocurrency p {
+      font-family: 'Poppins-SemiBold';
+      color: black;
+      height: 300px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 25px; }
+    section.cryptocurrency .newToCryptocurrency a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 90px;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Poppins-SemiBold';
+      color: #35AC7C;
+      padding-bottom: 40px; }
+  section.lastPost {
+    margin: 137px 0; }
+    section.lastPost .lastPostContext p {
+      text-align: center;
+      font-family: 'Poppins-Light';
+      font-size: 20px;
+      color: black;
+      margin: 0 auto;
+      width: 64%; }
+  section.pricingType {
+    margin-top: 100px; }
+    section.pricingType .checkPrice ul li .radioButtons {
+      display: unset; }
+      section.pricingType .checkPrice ul li .radioButtons .rightSide {
+        float: unset !important; }
+      section.pricingType .checkPrice ul li .radioButtons .checkContainer {
+        padding-top: 10px;
+        margin: unset;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 65px;
+        font-size: 30px; }
+        section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark {
+          top: 0; }
+    section.pricingType .starter .mainPoints {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column; }
+  section.asweredQuest {
+    margin-bottom: 70px; }
+    section.asweredQuest .sectionTitle h1 {
+      color: black;
+      margin-bottom: 90px; }
+    section.asweredQuest .quest .question {
+      font-size: 25px; }
+  section.pricing {
+    height: auto;
+    background-position: top;
+    padding: 33px 0; }
+  section.signIn, section.signUp {
+    background-image: unset;
+    margin-bottom: 0; }
+    section.signIn .loginWithOtherWay, section.signUp .loginWithOtherWay {
+      flex-direction: column !important; }
+      section.signIn .loginWithOtherWay span, section.signUp .loginWithOtherWay span {
+        display: flex;
+        justify-content: center; }
+        section.signIn .loginWithOtherWay span:nth-child(2), section.signUp .loginWithOtherWay span:nth-child(2) {
+          margin: 20px 0; }
+    section.signIn .rightSideImg, section.signUp .rightSideImg {
+      display: none; }
+  section.page-wrap .sectionTitle {
+    width: 100%; }
+  section.newsPost .mainPost {
+    height: auto; }
+  section.newsPost .post {
+    padding: 1.5rem 1rem; }
+    section.newsPost .post .post__title {
+      height: auto;
+      font-size: 28px; }
+  section .signUpFace p:before {
+    right: 0 !important; }
+  section .signUpFace p:after {
+    left: 0 !important; }
+  section .sectionTitle {
+    padding-top: 70px; }
+    section .sectionTitle p {
+      font-size: 20px; }
+  .main-navbar {
+    height: auto;
+    padding: 10px 0 !important; }
+  .sectionTitle h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1600px) and (min-width: 1400px) {
+  section.prices {
+    padding-top: 50px; }
+    section.prices:first-child {
+      padding-top: 180px; }
+    section.prices .priceText {
+      padding-top: 80px;
+      width: auto; }
+      section.prices .priceText h1 {
+        font-size: 35px; }
+      section.prices .priceText p {
+        font-size: 18px; }
+  section.cryptoHome .cryptoMarkets {
+    margin-top: 100px; }
+    section.cryptoHome .cryptoMarkets h1 {
+      width: 79%;
+      margin-bottom: 66px;
+      font-size: 45px; }
+    section.cryptoHome .cryptoMarkets ul li {
+      margin-right: 60px; }
+  section.join-us .subscribe form {
+    flex-wrap: wrap;
+    width: auto; } }
+
+@media screen and (max-width: 1530px) and (min-width: 992px) {
+  section.cryptoHome .cryptoMarkets ul {
+    display: block !important; }
+    section.cryptoHome .cryptoMarkets ul li {
+      display: block !important;
+      width: 40%;
+      margin: 20px 0; } }
+
+@media screen and (max-width: 1680px) and (min-width: 1600px) {
+  section.cryptoHome .cryptoMarkets ul {
+    display: flex;
+    flex-direction: column; }
+    section.cryptoHome .cryptoMarkets ul li {
+      width: 40%;
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  section.cryptoHome .cryptoMarkets {
+    margin-top: 80px; }
+    section.cryptoHome .cryptoMarkets h1 {
+      font-size: 36px; }
+  section.prices {
+    padding-top: 100px; }
+    section.prices .priceText {
+      width: auto;
+      padding: 0 30px 0 30px; } }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.cryptoHome .cryptoMarkets {
+    margin-top: 100px; }
+    section.cryptoHome .cryptoMarkets h1 {
+      width: 100%;
+      font-size: 36px;
+      margin-bottom: 160px; }
+    section.cryptoHome .cryptoMarkets ul li {
+      width: 60%; }
+      section.cryptoHome .cryptoMarkets ul li a {
+        color: black; }
+  section.pricingType .checkPrice ul li .radioButtons .checkContainer {
+    font-size: 25px; }
+    section.pricingType .checkPrice ul li .radioButtons .checkContainer input:checked ~ .checkmark {
+      margin-top: unset; }
+    section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark {
+      top: 0; }
+  section.pricingType .checkPrice ul li .radioButtons .rightSide {
+    font-size: 20px; }
+  section.asweredQuest {
+    margin-bottom: 80px; }
+  section.tutorials .tuotrialsPart {
+    height: auto; }
+    section.tutorials .tuotrialsPart .boxContent h5 {
+      height: auto;
+      margin-bottom: 30px;
+      font-size: 20px; }
+    section.tutorials .tuotrialsPart .boxContent p {
+      height: auto;
+      margin-bottom: 30px;
+      font-size: 14px; }
+  section.cryptocurrency .newToCryptocurrency p {
+    height: auto;
+    padding: 20px;
+    font-size: 12px; }
+  section.cryptocurrency .newToCryptocurrency a {
+    height: auto;
+    font-size: 18px; }
+  .main-navbar {
+    height: auto;
+    text-align: center; }
+  .sectionTitle {
+    padding-top: 100px; }
+    .sectionTitle h1 {
+      font-size: 35px; }
+    .sectionTitle p {
+      font-size: 25px; } }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  section.cryptoHome .cryptoMarkets {
+    width: 100%; }
+    section.cryptoHome .cryptoMarkets h1 {
+      font-size: 36px;
+      text-align: center; }
+    section.cryptoHome .cryptoMarkets ul li {
+      width: 50% !important; }
+      section.cryptoHome .cryptoMarkets ul li a {
+        color: black; }
+  section.prices {
+    padding-top: 100px; }
+    section.prices .groupImage {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center; }
+    section.prices .priceText {
+      width: auto; }
+  section.join-us .subscribe form {
+    width: auto; }
+  section.pricingType {
+    margin-top: 80px; }
+    section.pricingType .checkPrice ul li .radioButtons {
+      flex-direction: column; }
+      section.pricingType .checkPrice ul li .radioButtons .checkContainer {
+        font-size: 25px; }
+        section.pricingType .checkPrice ul li .radioButtons .checkContainer input:checked ~ .checkmark {
+          margin-top: unset; }
+        section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark {
+          top: 0; }
+      section.pricingType .checkPrice ul li .radioButtons .rightSide {
+        font-size: 20px; }
+  section.asweredQuest {
+    margin-bottom: 80px; }
+  section.newsPost .mainPost {
+    min-height: auto; }
+    section.newsPost .mainPost .post {
+      padding: 1.5rem 1rem; }
+      section.newsPost .mainPost .post .post__title {
+        height: auto;
+        font-size: 25px; }
+      section.newsPost .mainPost .post .post__context {
+        padding: unset; }
+      section.newsPost .mainPost .post .post__author {
+        flex-direction: column; }
+        section.newsPost .mainPost .post .post__author .post__date {
+          width: 100%;
+          text-align: left; }
+  .main-navbar {
+    height: auto; }
+    .main-navbar ul li {
+      margin: 0 11px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  section.newsPost .post .post__title {
+    height: auto;
+    font-size: 30px; }
+  section.page-wrap .sectionTitle {
+    width: 65%; }
+  section.cryptocurrency .newToCryptocurrency p {
+    height: auto;
+    padding: 20px;
+    font-size: 15px; }
+  section.cryptocurrency .newToCryptocurrency a {
+    height: auto;
+    font-size: 20px; } }

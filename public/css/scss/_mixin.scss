@@ -1,0 +1,11 @@
+@mixin boxTitle{
+  color: $mainColor;
+  font-size: 50px;
+  font-family: "Poppins-SemiBold";
+}
+
+@mixin boxPar {
+  color: black;
+  font-size: 25px;
+  font-family: 'Poppins-Light';
+}
