@@ -15,30 +15,36 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
+Route::view('/index', 'index')->name('index');
 
-Route::get('/pricing', function () {
-    return view('pricing');
-});
+Route::view('/pricing', 'pricing')->name('pricing');
 
-Route::get('/resources', function () {
-    return view('resources');
-});
+Route::view('/resources', 'resources')->name('resources');
 
-Route::get('/news', function () {
-    return view('news');
-});
+Route::view('/news', 'news')->name('news');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::view('/contact', 'contact')->name('contact');
 
-Route::get('/signIn', function () {
-    return view('signIn');
-});
+Route::view('/signIn', 'signIn')->name('signIn');
 
-Route::get('/signUp', function () {
-    return view('signUp');
-});
+Route::view('/signUp', 'signUp')->name('signUp');
+
+Auth::routes(['verify' => true]);
+
+Route::view('/home', 'index')->name('index');
+
+
+// Authentication Routes...
+//Route::get('login', 'Auth\AuthController@showLoginForm');
+//Route::post('login', 'Auth\AuthController@login');
+Route::get('logout', 'Auth\LoginController@logout');
+
+// Registration Routes...
+//Route::get('register', 'Auth\AuthController@showRegistrationForm');
+Route::post('register', 'Auth\RegisterController@register')->name('register');
+
+// Password Reset Routes...
+//Route::get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
+//Route::post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
+//Route::post('password/reset', 'Auth\PasswordController@reset');
+

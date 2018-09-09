@@ -1,59 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    {{ asset('css/libs/css/bootstrap.min.css') }}
-    {{ asset('css/libs/css/animate.css') }}
-    {{ asset('css/libs/css/owl.carousel.min.css') }}
-    {{ asset('css/style.css') }}
-</head>
+@extends('layouts.app')
 
-<body class="home">
+@section('content')
 
-<nav class="navbar navbar-expand-md navbar-light main-navbar">
-    <div class="content">
-        <a class="navbar-brand brand-logo" href="/index"><img src="{{ asset('img/logo.png') }}" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse float-right" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto navbarMenu">
-                <li>
-                    <a class="nav-link" href="pricing"> PRICING </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="resources"> RESOURCES </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="news"> NEWS & UPDATES </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="contact"> CONTACT </a>
-                </li>
-                <li>
-                    <p class="nav-link"> | </p>
-                </li>
-                <li class="active">
-                    <a class="nav-link" href="signIn"> SIGN IN </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="signUp"> SIGN UP </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<section class="signIn">
+    <section class="signIn">
 
     <div class="content">
 
@@ -67,25 +16,37 @@
                     </div>
                     <div class="signInForm">
                         <p>Enter username and password to log in:</p>
-                        <form>
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                <input type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="E-Mail Address" aria-label="E-Mail Address"
                                        aria-describedby="basic-addon1">
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                             <div class="input-group mb-3">
-                                <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                                <input type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Password" aria-label="Username"
                                        aria-describedby="basic-addon1">
+                                @if ($errors->has('password'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                            <div class="checkboxRemember">
+                                <label class="checkContainer">Remember me
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <button type="submit" class="btn btn-primary login">SIGN IN</button>
+                                <a href="{{ route('password.request') }}" class="float-right forgotPassword">Forgot your password?</a>
+                                <div class="clearfix"></div>
                             </div>
                         </form>
-                        <div class="checkboxRemember">
-                            <label class="checkContainer">Remember me
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <button type="submit" class="btn btn-primary login">SIGN IN</button>
-                            <a href="#" class="float-right forgotPassword">Forgot your password?</a>
-                            <div class="clearfix"></div>
-                        </div>
+
                         <div class="signUpFace">
                             <p>or login with</p>
 
@@ -146,11 +107,4 @@
 </footer>
 
 
-{{ asset('libs/js/jquery-3.3.1.min.js') }}
-{{ asset('libs/js/popper.min.js') }}
-{{ asset('libs/js/bootstrap.min.js') }}
-{{ asset('libs/js/wow.min.js') }}
-{{ asset('libs/js/owl.carousel.min.js') }}
-{{ asset('js/main.js') }}
-</body>
-</html>
+@endsection
