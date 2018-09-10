@@ -31,6 +31,11 @@ Route::view('/signUp', 'signUp')->name('signUp');
 
 Auth::routes(['verify' => true]);
 
+
+Route::get('/redirect', 'SocialAuthGoogleController@redirect');
+Route::get('/callback', 'SocialAuthGoogleController@callback');
+
+
 Route::view('/home', 'index')->name('index');
 
 
