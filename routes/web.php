@@ -15,30 +15,47 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
+Route::view('index', 'index')->name('index');
 
-Route::get('/pricing', function () {
-    return view('pricing');
-});
+Route::view('pricing', 'pricing')->name('pricing')->middleware('auth');
 
-Route::get('/resources', function () {
-    return view('resources');
-});
+Route::view('resources', 'resources')->name('resources');
 
-Route::get('/news', function () {
-    return view('news');
-});
+Route::view('news', 'news')->name('news');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::view('contact', 'contact')->name('contact');
 
-Route::get('/signIn', function () {
-    return view('signIn');
-});
+Route::view('login', 'login')->name('login');
 
-Route::get('/signUp', function () {
-    return view('signUp');
-});
+
+
+Route::view('register', 'register')->name('register');
+
+Auth::routes(['verify' => true]);
+
+Route::get('/redirect', 'SocialAuthGoogleController@redirect');
+Route::get('/callback', 'SocialAuthGoogleController@callback');
+
+Route::get('/redirectf', 'SocialAuthFacebookController@redirect');
+Route::get('/callbackf', 'SocialAuthFacebookController@callback');
+
+Route::get('home', 'HomeController@index')->name('home');
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+
+//Route::post('login', 'Auth\LoginController@login')->name('login');
+
+//Route::get('/clear-cache', function() {
+//    $exitCode = Artisan::call('cache:clear');
+    // return what you want
+//});
+
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
