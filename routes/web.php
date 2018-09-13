@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::view('index', 'index')->name('index');
 
-Route::view('pricing', 'pricing')->name('pricing')->middleware('auth');
+Route::view('pricing', 'pricing')->name('pricing');
 
 Route::view('resources', 'resources')->name('resources');
 
@@ -33,6 +33,9 @@ Route::view('register', 'register')->name('register');
 
 Auth::routes(['verify' => true]);
 
+//Route::post('/login', 'Auth\LoginController@login')->name('login');
+
+
 Route::get('/redirect', 'SocialAuthGoogleController@redirect');
 Route::get('/callback', 'SocialAuthGoogleController@callback');
 
@@ -44,7 +47,7 @@ Route::get('home', 'HomeController@index')->name('home');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 
-//Route::post('login', 'Auth\LoginController@login')->name('login');
+//Route::post('/login', 'Auth\LoginController@login')->name('login');
 
 //Route::get('/clear-cache', function() {
 //    $exitCode = Artisan::call('cache:clear');
@@ -52,10 +55,3 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name
 //});
 
 
-
-
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

@@ -10,11 +10,9 @@
         <div class="row no-gutters">
             <div class="col-md-12">
                 <div class="cryptoMarkets">
-                    <h1>Crypto Whale Bot
-                        Telegram bot for tracking
-                        crypto markets.</h1>
+                    <h1  class="wow slideInLeft" data-wow-duration="2s">Crypto Whale Bot Telegram bot for trackingcrypto markets.</h1>
 
-                    <ul class="list-inline">
+                    <ul class="list-inline wow slideInLeft" data-wow-duration="2.2s">
                         <li class="list-inline-item">
                             <a href="#">
                                 <span>
@@ -153,7 +151,7 @@
                         </li>
                     </ul>
 
-                    <div class="learnMore">
+                    <div class="learnMore wow slideInLeft" data-wow-duration="2.5s">
                         <button class="btn" type="button">Learn More</button>
                         <button class="btn-def" type="button">View Plans</button>
                     </div>
@@ -166,12 +164,12 @@
 <section class="prices">
     <div class="content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
                 <div class="groupImage">
                     <img src="{{ asset('img/groupB.png') }}" alt="">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2.2s">
                 <div class="priceText float-right">
                     <h1>Prices</h1>
                     <p>Telegram</p>
@@ -188,7 +186,7 @@
 <section class="prices">
     <div class="content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
                 <div class="priceText">
                     <h1>Charts</h1>
                     <p>Telegram</p>
@@ -199,7 +197,7 @@
                         !c btc will return a 3 day chart of BTC</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
                 <div class="groupImage">
                     <img src="{{ asset('img/d.png') }}" alt="">
                 </div>
@@ -211,12 +209,12 @@
 <section class="prices">
     <div class="content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
                 <div class="groupImage">
                     <img src="{{ asset('img/n.png') }}" alt="">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2.2s">
                 <div class="priceText float-right">
                     <h1>News</h1>
                     <p>Telegram</p>
@@ -231,16 +229,16 @@
 <section class="prices">
     <div class="content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeInUp" data-wow-duration="2s">
                 <div class="priceText">
-                    <h1>Events</h1>
+                    <h1 class="wow fadeInUp" data-wow-duration="2.2s">Events</h1>
                     <p>Telegram</p>
                     <p>/events will return today's events for all crypto currency</p>
                     <p>Discord</p>
                     <p>!events will return today's events</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeInUp" data-wow-duration="2.2s">
                 <div class="groupImage float-right">
                     <img src="{{ asset('img/gf.png') }}">
                 </div>
@@ -252,8 +250,7 @@
 <section class="join-us">
     <div class="content">
         <div class="row">
-            <div class="col-md-12 text-center wow slideInLeft" data-wow-duration="1.5s"
-                 style="visibility: visible; animation-duration: 1.5s; animation-name: slideInLeft;">
+            <div class="col-md-12 text-center wow slideInLeft" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: slideInLeft;">
                 <h3>Sign up for bi-weekly crypto market reports!</h3>
                 <div class="subscribe wow slideInLeft" data-wow-duration="2s"
                      style="visibility: visible; animation-duration: 2s; animation-name: slideInLeft;">

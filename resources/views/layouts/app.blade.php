@@ -69,7 +69,7 @@
                                 <a class="nav-link" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
+                                    {{ __('LOGOUT') }}
                                 </a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
@@ -83,33 +83,49 @@
     </nav>
 
 
-    {{--<div class="messageModal">--}}
-        {{--<div class="container">--}}
-            {{--<h2>Small Modal</h2>--}}
-            {{--<!-- Trigger the modal with a button -->--}}
-            {{--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>--}}
+    <div class="modalSmall" style="
+            padding-top:  100px;">
 
-            {{--<!-- Modal -->--}}
-            {{--<div class="modal fade" id="myModal" role="dialog">--}}
-                {{--<div class="modal-dialog modal-sm">--}}
-                    {{--<div class="modal-content">--}}
-                        {{--<div class="modal-header">--}}
-                            {{--<button type="button" class="close" data-dismiss="modal">&times;</button>--}}
-                            {{--<h4 class="modal-title">Modal Header</h4>--}}
-                        {{--</div>--}}
-                        {{--<div class="modal-body">--}}
-                            {{--@if(Session::has('message'))--}}
-                                {{--<p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>--}}
-                            {{--@endif--}}
-                        {{--</div>--}}
-                        {{--<div class="modal-footer">--}}
-                            {{--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
+        @if(Session::has('message'))
+            <div class="container">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">E - mail verify</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        @endif
+
+    </div>
+
+
 
 
 
