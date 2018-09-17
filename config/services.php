@@ -1,4 +1,3 @@
-
 <?php
 
 return [
@@ -18,6 +17,7 @@ return [
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
+        'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
     ],
 
     'ses' => [
@@ -39,13 +39,21 @@ return [
     'google' => [
         'client_id' => '381485562076-98un8mn80khsdleu04csodcjet12d36k.apps.googleusercontent.com',
         'client_secret' => 'OMQ087ewin8jANgwdopmB3Cp',
-        'redirect' => 'http://laravelsat.com/callback'
+        'redirect' => 'http://dev.restadviser.com/prog/prog32/public/auth/google/callback',
     ],
 
     'facebook' => [
         'client_id' => '1590739881030344',
         'client_secret' => 'adcba35d77c680e39125d82b4b9ef1df',
-        'redirect' => 'http://laravelsat.com/callbackf',
+        'redirect' => 'http://dev.restadviser.com/prog/prog32/public/auth/facebook/callback',
+
+    ],
+
+    'twitter' => [
+        'client_id' => 'tCnLWaFUbuQyinHST7udMpvSm',
+        'client_secret' => 'WHwEI6vq6O9DQ4QjDzhQdfbR46myqK8jyG1JsQnY0iF9i9mZXb',
+        'redirect' => 'http://dev.restadviser.com/prog/prog32/public/auth/twitter/callback',
+        
     ],
 
 ];

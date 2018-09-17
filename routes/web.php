@@ -23,35 +23,12 @@ Route::view('resources', 'resources')->name('resources');
 
 Route::view('news', 'news')->name('news');
 
+Route::view('policy', 'policy')->name('policy');
 Route::view('contact', 'contact')->name('contact');
-
-Route::view('login', 'login')->name('login');
-
-
-
-Route::view('register', 'register')->name('register');
 
 Auth::routes(['verify' => true]);
 
-//Route::post('/login', 'Auth\LoginController@login')->name('login');
-
-
-Route::get('/redirect', 'SocialAuthGoogleController@redirect');
-Route::get('/callback', 'SocialAuthGoogleController@callback');
-
-Route::get('/redirectf', 'SocialAuthFacebookController@redirect');
-Route::get('/callbackf', 'SocialAuthFacebookController@callback');
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('home', 'HomeController@index')->name('home');
-
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
-
-
-//Route::post('/login', 'Auth\LoginController@login')->name('login');
-
-//Route::get('/clear-cache', function() {
-//    $exitCode = Artisan::call('cache:clear');
-    // return what you want
-//});
-
-

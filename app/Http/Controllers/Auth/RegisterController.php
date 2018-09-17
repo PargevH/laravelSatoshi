@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Events\Registered;
 
 
-
 class RegisterController extends Controller
 {
     /*
@@ -44,6 +43,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
+
         $this->middleware('guest');
     }
 
@@ -71,11 +71,12 @@ class RegisterController extends Controller
 
     public function register(Request $request)
     {
+
         $this->validator($request->all())->validate();
 
         event(new Registered($user = $this->create($request->all())));
 
-        //$this->guard()->login($user);
+       // $this->guard()->login($user);
 
         return $this->registered($request, $user)
             ?: redirect($this->redirectPath());
@@ -83,11 +84,11 @@ class RegisterController extends Controller
 
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+            return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password']),
+            ]);
     }
 
 }

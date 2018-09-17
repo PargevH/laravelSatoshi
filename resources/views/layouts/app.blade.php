@@ -85,8 +85,7 @@
 
     <div class="modalSmall" style="
             padding-top:  100px;">
-
-        @if(Session::has('message'))
+        @if(Auth::user() && !Auth::user()->email_verified_at)
             <div class="container">
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -98,7 +97,7 @@
                                 <h4 class="modal-title">E - mail verify</h4>
                             </div>
                             <div class="modal-body">
-                                <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                                <p class="alert alert-danger">'If your mail address is not verified please check your mail and verified your email address!'</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -109,17 +108,6 @@
                 </div>
 
             </div>
-
-
-
-
-
-
-
-
-
-
-
 
         @endif
 

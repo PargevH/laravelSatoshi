@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Session;
+use Laravel\Socialite\Facades\Socialite;
+use App\User;
+use Illuminate\Support\Facades\Hash;
+
+
+
 
 class LoginController extends Controller
 {
@@ -45,7 +51,6 @@ class LoginController extends Controller
     public function login(Request $request)
     {
 
-
         $this->validateLogin($request);
 
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
@@ -55,12 +60,9 @@ class LoginController extends Controller
             $this->fireLockoutEvent($request);
             return $this->sendLockoutResponse($request);
         }
-
-        $request->password = bcrypt($request->password);
+        
         if ($this->attemptLogin($request)) {
 
-            Session::flash('message', 'is your mail address is not verified please check your mail and verified your email address!');
-            Session::flash('alert-class', 'alert-danger');
 
             return $this->sendLoginResponse($request);
         }
@@ -68,9 +70,85 @@ class LoginController extends Controller
         // If the login attempt was unsuccessful we will increment the number of attempts
         // to login and redirect the user back to the login form. Of course, when this
         // user surpasses their maximum number of attempts they will get locked out.
+
         $this->incrementLoginAttempts($request);
 
         return $this->sendFailedLoginResponse($request);
     }
 
+
+    // Some methods which were generated with the app
+
+    /**
+     * Redirect the user to the OAuth Provider.
+     *
+     * @return Response
+     */
+    public function redirectToProvider($provider)
+    {
+        if($provider == 'google'){
+            return Socialite::driver($provider)->stateless()->redirect();
+        }
+        return Socialite::driver($provider)->redirect();
+
+    }
+
+    /**
+     * Obtain the user information from provider.  Check if the user already exists in our
+     * database by looking up their provider_id in the database.
+     * If the user exists, log them in. Otherwise, create a new user then log them in. After that
+     * redirect them to the authenticated users homepage.
+     *
+     * @return Response
+     */
+    public function handleProviderCallback($provider)
+    {
+        if($provider == 'google'){
+            $user = Socialite::driver($provider)->stateless()->user();
+        }else{
+            $user = Socialite::driver($provider)->user();
+        }
+
+
+        $authUser = $this->findOrCreateUser($user, $provider);
+        Auth::login($authUser, true);
+        return redirect()->to('/index');
+    }
+
+    /**
+     * If a user has registered before using social auth, return the user
+     * else, create a new user object.
+     * @param  $user Socialite user object
+     * @param $provider Social auth provider
+     * @return  User
+     */
+    public function findOrCreateUser($user, $provider)
+    {
+
+        $authUser = User::where('email', $user->email)->first();
+
+        if ($authUser){
+
+            // Check and update if provider data doesn't exists
+            if(!($authUser->provider_id)){
+                $authUser->provider_id = $user->id;
+                $authUser->provider = $provider;
+                $authUser->save();
+            }
+
+            return $authUser;
+        }
+        $authUser = User::where('provider_id', $user->id)->first();
+        if ($authUser) {
+            return $authUser;
+        }
+
+        return User::create([
+            'name'     => $user->name,
+            'email'    => $user->email,
+            'provider' => $provider,
+            'provider_id' => $user->id,
+            'password' => substr(Hash::make($user->id), 0, 99)
+        ]);
+    }
 }

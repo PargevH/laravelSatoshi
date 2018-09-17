@@ -10,7 +10,8 @@
         <div class="row no-gutters">
             <div class="col-md-12">
                 <div class="cryptoMarkets">
-                    <h1  class="wow slideInLeft" data-wow-duration="2s">Crypto Whale Bot Telegram bot for trackingcrypto markets.</h1>
+                    <h1  class="wow slideInLeft" data-wow-duration="2s">Crypto Whale Bot Telegram bot for tracking
+                        crypto markets.</h1>
 
                     <ul class="list-inline wow slideInLeft" data-wow-duration="2.2s">
                         <li class="list-inline-item">
