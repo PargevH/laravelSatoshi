@@ -1145,7 +1145,7 @@ input:focus, textarea:focus, select:focus {
 
 /***** Start Header scss ***/
 .main-navbar {
-    position: fixed;
+    position: unset;
     width: 100%;
     z-index: 999;
     background-color: white;

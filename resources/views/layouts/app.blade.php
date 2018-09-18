@@ -81,11 +81,14 @@
             </div>
         </div>
     </nav>
+    @if(Session::has('message'))
+        <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+    @endif
 
 
     <div class="modalSmall" style="
             padding-top:  100px;">
-        @if(Auth::user() && !Auth::user()->email_verified_at)
+        @if(Auth::user() && !Auth::user()->provider && !Auth::user()->email_verified_at)
             <div class="container">
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">

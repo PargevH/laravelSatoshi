@@ -24,6 +24,7 @@ Route::view('resources', 'resources')->name('resources');
 Route::view('news', 'news')->name('news');
 
 Route::view('policy', 'policy')->name('policy');
+
 Route::view('contact', 'contact')->name('contact');
 
 Auth::routes(['verify' => true]);
@@ -32,3 +33,4 @@ Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('home', 'HomeController@index')->name('home');
+

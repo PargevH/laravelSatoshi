@@ -2,6 +2,8 @@
 
 
 @section('content')
+
+
 <section class="signIn">
 
     <div class="content">
