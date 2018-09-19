@@ -45,14 +45,14 @@ return [
     'facebook' => [
         'client_id' => '1590739881030344',
         'client_secret' => 'adcba35d77c680e39125d82b4b9ef1df',
-        'redirect' => 'http://http://laravelsat.com/auth/facebook/callback',
+        'redirect' => 'http://laravelsat.com/auth/facebook/callback',
 
     ],
 
     'twitter' => [
         'client_id' => 'tCnLWaFUbuQyinHST7udMpvSm',
         'client_secret' => 'WHwEI6vq6O9DQ4QjDzhQdfbR46myqK8jyG1JsQnY0iF9i9mZXb',
-        'redirect' => 'http://http://laravelsat.com/auth/twitter/callback',
+        'redirect' => 'http://laravelsat.com/auth/twitter/callback',
         
     ],
 

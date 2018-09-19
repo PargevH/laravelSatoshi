@@ -3,7 +3,53 @@
 @section('content')
     <div class="entry-content clearfix">
         <h3></h3>
-        <div id="toc_container" class="toc_wrap_right no_bullets"><p class="toc_title">Content Overview <span class="toc_toggle">[<a href="#">hide</a>]</span></p><ul class="toc_list"><li><a href="#Terms_of_use"><span class="toc_number toc_depth_1">1</span> Terms of use</a></li><li><a href="#Updatein_Privacy_Policy"><span class="toc_number toc_depth_1">2</span> Update&nbsp;in Privacy Policy</a></li><li><a href="#Data_Sharing"><span class="toc_number toc_depth_1">3</span> Data Sharing</a></li><li><a href="#Cookies"><span class="toc_number toc_depth_1">4</span> Cookies</a></li><li><a href="#Source_code_Copyrights"><span class="toc_number toc_depth_1">5</span> Source code Copyrights</a></li><li><a href="#Analytics_Advertisement"><span class="toc_number toc_depth_1">6</span> Analytics &amp; &nbsp;Advertisement</a></li><li><a href="#We_don8217t_collect"><span class="toc_number toc_depth_1">7</span> We don’t collect</a></li><li><a href="#We_collect"><span class="toc_number toc_depth_1">8</span> We collect</a></li></ul></div>
+            <div id="toc_container" class="toc_wrap_right no_bullets">
+                <p class="toc_title">Content Overview
+                    <span class="toc_toggle">[<a href="#">hide</a>]</span>
+                </p>
+                <ul class="toc_list">
+                    <li>
+                        <a href="#Terms_of_use">
+                            <span class="toc_number toc_depth_1">1</span> Terms of use
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Updatein_Privacy_Policy">
+                            <span class="toc_number toc_depth_1">2</span> Update&nbsp;in Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Data_Sharing">
+                            <span class="toc_number toc_depth_1">3</span> Data Sharing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Cookies">
+                            <span class="toc_number toc_depth_1">4</span> Cookies
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Source_code_Copyrights">
+                            <span class="toc_number toc_depth_1">5</span> Source code Copyrights
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Analytics_Advertisement">
+                            <span class="toc_number toc_depth_1">6</span> Analytics &amp; &nbsp;Advertisement
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#We_don8217t_collect">
+                            <span class="toc_number toc_depth_1">7</span> We don’t collect
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#We_collect">
+                            <span class="toc_number toc_depth_1">8</span> We collect
+                        </a>
+                    </li>
+                </ul>
+            </div>
         <h3><span id="Terms_of_use"><strong>Terms of use</strong></span></h3>
         <p>If you are using <a href="http://satoshi.com" target="_blank" rel="noopener"><strong>satoshi</strong> </a>website then you must accept this privacy policy. If not then please check out all the details of this website’s <strong>Privacy Policy</strong>. Otherwise, it is considered that you are accepting and you do not have any kind of objections against it.</p>
         <p>&nbsp;</p>

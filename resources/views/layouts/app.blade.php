@@ -62,8 +62,27 @@
                                 <a class="nav-link" href="{{route('register')}}"> SIGN UP </a>
                             </li>
                         @else
+
                             <li>
-                                <a class="nav-link">{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}</a>
+                                {{--<a class="nav-link">{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}</a>--}}
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-name dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">My Account
+                                            <span class="caret"></span></button>
+                                        <ul class="dropdown-menu dropdown-name-menu" role="menu" aria-labelledby="menu1">
+                                            <li  role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">My Subscriptions</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Referrals</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Account Settings</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Payment</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                             </li>
                             <li>
                                 <a class="nav-link" href="{{ route('logout') }}"
@@ -86,8 +105,7 @@
     @endif
 
 
-    <div class="modalSmall" style="
-            padding-top:  100px;">
+    <div class="modalSmall">
         @if(Auth::user() && !Auth::user()->provider && !Auth::user()->email_verified_at)
             <div class="container">
                 <!-- Modal -->
@@ -131,6 +149,33 @@
 
     <footer>
 
+
+
+        <div class="content">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="socialLinks">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="nav-link" href="{{route('pricing')}}"> PRICING </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="nav-link" href="{{route('resources')}}"> RESOURCES </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="nav-link" href="{{route('news')}}"> NEWS & UPDATES </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="nav-link" href="{{route('contact')}}"> CONTACT </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="content">
             <div class="row text-center">
                 <div class="col-md-12">
@@ -142,8 +187,8 @@
                             <li class="list-inline-item">
                                 <a href="#"><img src="{{ asset('img/twitter-logo-button.png') }}" alt=""></a>
                             </li>
-                            <li class="list-inline-item">
-                                <a href="#"><img src="{{ asset('img/instagram-logo.png') }}" alt=""></a>
+                            <li class="list-inline-item google">
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
                             </li>
                         </ul>
                     </div>

@@ -10,8 +10,7 @@
         <div class="row no-gutters">
             <div class="col-md-12">
                 <div class="cryptoMarkets">
-                    <h1  class="wow slideInLeft" data-wow-duration="2s">Crypto Whale Bot Telegram bot for tracking
-                        crypto markets.</h1>
+                    <h1  class="wow slideInLeft" data-wow-duration="2s">Cryptocurrency trading signals and software</h1>
 
                     <ul class="list-inline wow slideInLeft" data-wow-duration="2.2s">
                         <li class="list-inline-item">
@@ -153,8 +152,8 @@
                     </ul>
 
                     <div class="learnMore wow slideInLeft" data-wow-duration="2.5s">
-                        <button class="btn" type="button">Learn More</button>
-                        <button class="btn-def" type="button">View Plans</button>
+                        <a class="btn" href="#aboutUs" type="button">Learn More</a>
+                        <a class="btn-def" href="{{route('pricing')}}" type="button">View Plans</a>
                     </div>
                 </div>
             </div>
@@ -167,83 +166,114 @@
         <div class="row">
             <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
                 <div class="groupImage">
+                    <img src="{{ asset('img/d.png') }}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2.2s">
+                <div class="priceText float-right">
+                    <h1>Signals</h1>
+                    <p>
+                        We offer trading signals for a variety of digital asset trading strategies
+                        including Bitcoin and other highly traded cryptocurrencies. Currently we
+                        offer a momentum strategy that trades breakouts in highly traded
+                        cryptocurrencies on Binance. You can access these signals via our
+                        private Twitter, Telegram, and Discord feeds
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="prices">
+    <div class="content">
+        <div class="row">
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
+                <div class="priceText">
+                    <h1>Software</h1>
+                    <p>
+                        Our proprietary trading software receives signals from one of our trading
+                        strategies and automatically execute trades on your behalf. This software
+                        have a dashboard to let you track your trades and open positions while
+                        running a strategy.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 wow slideInLeft text-center" data-wow-duration="2s">
+                <div class="groupImage large_image">
+                    <img src="{{ asset('img/so.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{--<section class="prices">--}}
+    {{--<div class="content">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-6 wow slideInLeft" data-wow-duration="2s">--}}
+                {{--<div class="priceText">--}}
+                    {{--<h1>Charts</h1>--}}
+                    {{--<p>Telegram</p>--}}
+                    {{--<p>Telegram--}}
+                        {{--/c btc will return a 3 day chart of BTC <br>--}}
+                        {{--/ac command will allow you get periods of days and hours Also USD, EUR, and BTC pairings work--}}
+                        {{--Ex: /ac eth usd hour 70 Discord--}}
+                        {{--!c btc will return a 3 day chart of BTC</p>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-6 wow slideInLeft" data-wow-duration="2s">--}}
+                {{--<div class="groupImage">--}}
+                    {{--<img src="{{ asset('img/d.png') }}" alt="">--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
+
+<section class="prices">
+    <div class="content">
+        <div class="row">
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
+                <div class="groupImage">
                     <img src="{{ asset('img/groupB.png') }}" alt="">
                 </div>
             </div>
             <div class="col-md-6 wow slideInLeft" data-wow-duration="2.2s">
                 <div class="priceText float-right">
-                    <h1>Prices</h1>
-                    <p>Telegram</p>
-                    <p>/p btc will return the price of Bitcoin <br>
-                        the 24hour return and 1 hour return will be listed
-                        below the price Discord !p btc will return price of
-                        Bitcoin</p>
+                    <h1>Charts and News</h1>
+                    <p>
+                        In addition to our trading signals and software, we will also be providing
+                        members with news,price action analysis and graphics/charts to help
+                        educate the community using our software.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="prices">
+<section class="prices text-center" id="aboutUs" >
     <div class="content">
         <div class="row">
-            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
+            <div class="col-md-12 wow fadeInUp" data-wow-duration="2s">
                 <div class="priceText">
-                    <h1>Charts</h1>
-                    <p>Telegram</p>
-                    <p>Telegram
-                        /c btc will return a 3 day chart of BTC <br>
-                        /ac command will allow you get periods of days and hours Also USD, EUR, and BTC pairings work
-                        Ex: /ac eth usd hour 70 Discord
-                        !c btc will return a 3 day chart of BTC</p>
+                    <h1 class="wow fadeInUp" data-wow-duration="2.2s">About Us</h1>
+                    <p>
+                        Satoshi Signals is a venture started and funded by Satoshi Capital, a quantitative
+                        digital asset hedge fund based in Atlanta, GA. Satoshi Signals strives to provide
+                        accurate and reliable trading signals to our users and enable them to trade digital
+                        assets using automated trading systems. We believe in using a variety of data
+                        sources to develop robust trading strategies that perform well regardless of the
+                        state of the digital asset space.
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
-                <div class="groupImage">
-                    <img src="{{ asset('img/d.png') }}" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="prices">
-    <div class="content">
-        <div class="row">
-            <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
-                <div class="groupImage">
-                    <img src="{{ asset('img/n.png') }}" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 wow slideInLeft" data-wow-duration="2.2s">
-                <div class="priceText float-right">
-                    <h1>News</h1>
-                    <p>Telegram</p>
-                    <p>/news will return trending news for all crypto <br>
-                        currency /news eth will return trending news for eth</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="prices">
-    <div class="content">
-        <div class="row">
-            <div class="col-md-6 wow fadeInUp" data-wow-duration="2s">
-                <div class="priceText">
-                    <h1 class="wow fadeInUp" data-wow-duration="2.2s">Events</h1>
-                    <p>Telegram</p>
-                    <p>/events will return today's events for all crypto currency</p>
-                    <p>Discord</p>
-                    <p>!events will return today's events</p>
-                </div>
-            </div>
-            <div class="col-md-6 wow fadeInUp" data-wow-duration="2.2s">
-                <div class="groupImage float-right">
-                    <img src="{{ asset('img/gf.png') }}">
-                </div>
-            </div>
+            {{--<div class="col-md-6 wow fadeInUp" data-wow-duration="2.2s">--}}
+                {{--<div class="groupImage float-right">--}}
+                    {{--<img src="{{ asset('img/gf.png') }}">--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
     </div>
 </section>

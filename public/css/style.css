@@ -150,103 +150,290 @@ section.pricingType .starter .mainPoints ul li:after {
     left: 0;
 }
 
-section.pricingType .checkPrice ul {
+.google {
+    height: 46px;
+    width: 46px;
+    padding: 9px;
+    border-radius: 50%;
+    background: #dc4e41;
+    vertical-align: middle;
+}
+
+.google i {
+    color: white;
+    font-size: 21px;
+    padding-top: 4px;
+}
+
+.socialLinks ul li a {
+    color: black;
+    padding-left: unset !important;
+    padding-right: unset !important;
+    font-size: 16px;
+    font-family: "Poppins-Regular";
+}
+
+.dropdown-name {
+    padding-left: unset !important;
+    padding-right: unset !important;
+    font-size: 16px;
+    color: black !important;
+    font-family: "Poppins-Regular";
+    background: #fff;
+}
+
+.dropdown-name:hover {
+    transition: 1000ms;
+    color: #35AC7C !important;
+}
+
+.dropdown-name-menu {
+    width: 200px;
+}
+
+.checkPrice ul {
     list-style-type: none;
 }
 
-section.pricingType .checkPrice ul li {
-    display: flex;
-    height: 140px;
-    vertical-align: middle;
-    margin: unset;
-    margin-bottom: 26px;
-    background-color: white;
+/*.checkPrice ul button.checkbox {*/
+    /*display: inline-block;*/
+    /*width: 25%;*/
+    /*display: inline-block;*/
+    /*border-radius: unset;*/
+    /*padding: 10px 25px;*/
+    /*vertical-align: baseline;*/
+    /*color: #329f77;*/
+    /*border: 1px solid;*/
+    /*background: white;*/
+    /*font-size: 25px;*/
+    /*font-family: "Poppins-Regular";*/
+    /*margin-right: 30px;*/
+/*}*/
+
+.checkPrice ul .dropdown_text {
+    display: none;
+    list-style-type: circle;
+    padding-left: 60px;
 }
 
-section.pricingType .checkPrice ul li.active {
-    background: #329f77;
+.checkPrice ul .active {
+    background-color: #329f77;
 }
 
-section.pricingType .checkPrice ul li.active .checkContainer {
+.checkPrice ul .active .checkContainer {
     color: white !important;
 }
 
-section.pricingType .checkPrice ul li .radioButtons {
-    margin: auto;
-    width: 100%;
-    display: flex;
-    padding: 0 44px;
+.checkPrice ul .active .checkContainer input:checked ~ .checkmark:after {
+    display: block;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .checkContainer {
+.checkPrice ul .radioButtons {
+    width: 67%;
+    display: inline-block;
+    padding: 0 44px 0 20px;
+    height: 110px;
+    vertical-align: middle;
+    margin: unset;
+    margin-bottom: 26px;
+    line-height: 100px;
+}
+
+.checkPrice ul .radioButtons .checkContainer {
     margin: unset;
     display: block;
-    width: 100%;
+    width: auto;
     float: left;
     position: relative;
-    padding-left: 65px;
+    padding-left: 50px;
     cursor: pointer;
-    font-size: 40px;
-    color: #4D8B45;
-    font-family: 'Poppins-SemiBold';
+    font-size: 25px;
+    font-family: "Poppins-SemiBold";
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    color: #4D8B45;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .checkContainer input {
+.checkPrice ul .radioButtons .checkContainer input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .checkContainer input:checked ~ .checkmark {
-    background-color: #4d8b45;
-    margin-top: 12px;
+.checkPrice ul .radioButtons .checkContainer input:checked ~ .checkmark {
+    background-color: transparent;
     border: 1px solid white;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .checkContainer input:checked ~ .checkmark:after {
+.checkPrice ul .radioButtons .checkContainer input:checked ~ .checkmark:after {
     display: block;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark {
+.checkPrice ul .radioButtons .checkContainer .checkmark {
     position: absolute;
-    top: 8px;
+    top: 38%;
     left: 0;
-    height: 39px;
-    width: 39px;
-    background-color: white;
+    height: 25px;
+    width: 25px;
     border: 1px solid black;
     border-radius: 50%;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark:after {
+.checkPrice ul .radioButtons .checkContainer .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .checkContainer .checkmark:after {
-    top: 7px;
-    left: 7px;
-    width: 23px;
-    height: 23px;
+.checkPrice ul .radioButtons .checkContainer .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: white;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .checkContainer:hover input ~ .checkmark {
-    background-color: #35AC7C;
+.checkPrice ul .radioButtons .checkContainer:hover input ~ .checkmark {
+    background-color: #4D8B45;
     transition: 1500ms;
 }
 
-section.pricingType .checkPrice ul li .radioButtons .rightSide {
-    font-family: 'Poppins-Light';
-    font-size: 25px;
+.checkPrice ul .radioButtons .rightSide {
+    font-family: "Poppins-Light";
+    font-size: 12px;
     color: black;
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    outline: 3px solid #fff;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #329f77;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.checkPrice ul {
+    list-style-type: none;
+}
+
+.checkPrice ul button.checkbox {
+    width: auto;
+    display: inline-block;
+    border-radius: unset;
+    padding: 10px;
+    vertical-align: baseline;
+    color: #329f77;
+    border: 1px solid;
+    background: white;
+    font-size: 16px;
+    font-family: "Poppins-Regular";
+    margin-right: unset;
+}
+
+.checkPrice ul .dropdown_text {
+    display: none;
+    list-style-type: circle;
+    padding-left: 60px;
+}
+
+.checkPrice ul .active {
+    background-color: #329f77;
+}
+
+.checkPrice ul .active .checkContainer {
+    color: white !important;
+}
+
+.checkPrice ul .active .checkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkPrice ul .radioButtons .checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkPrice ul .radioButtons .checkContainer input:checked ~ .checkmark {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.checkPrice ul .radioButtons .checkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkPrice ul .radioButtons .checkContainer .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkPrice ul .radioButtons .checkContainer:hover input ~ .checkmark {
+    background-color: #329f77;
+    transition: 1500ms;
+}
+
+/*.checkPrice ul .radioButtons .rightSide {*/
+    /*font-family: "Poppins-Light";*/
+    /*font-size: 20px;*/
+    /*color: black;*/
+/*}*/
 
 section.asweredQuest {
     margin-bottom: 200px;
@@ -552,10 +739,10 @@ input:focus, textarea:focus, select:focus {
 }
 
 /***Start Sign in and Sign Up  scss**/
-section.signIn, section.signUp {
-    margin-bottom: 273px;
-    padding-top: 120px;
-}
+/*section.signIn, section.signUp {*/
+/*margin-bottom: 273px;*/
+/*padding-top: 120px;*/
+/*}*/
 
 section.signIn .content, section.signUp .content {
     width: 100%;
@@ -730,11 +917,15 @@ section.signIn .signInForm .signUpFace p:after, section.signIn .signInForm .sign
 }
 
 section.signIn .signInForm .signUpFace p:after, section.signIn .signUpForm .signUpFace p:after, section.signUp .signInForm .signUpFace p:after, section.signUp .signUpForm .signUpFace p:after {
-    left: 82px;
+    left: 70px;
 }
 
 section.signIn .signInForm .signUpFace p:before, section.signIn .signUpForm .signUpFace p:before, section.signUp .signInForm .signUpFace p:before, section.signUp .signUpForm .signUpFace p:before {
-    right: 82px;
+    right: 70px;
+}
+
+.large_image img {
+    width: 63%;
 }
 
 section.signIn .signInForm .signUpFace .loginWithOtherWay, section.signIn .signUpForm .signUpFace .loginWithOtherWay, section.signUp .signInForm .signUpFace .loginWithOtherWay, section.signUp .signUpForm .signUpFace .loginWithOtherWay {
@@ -743,25 +934,44 @@ section.signIn .signInForm .signUpFace .loginWithOtherWay, section.signIn .signU
 }
 
 section.signIn .signInForm .signUpFace .loginWithOtherWay a, section.signIn .signUpForm .signUpFace .loginWithOtherWay a, section.signUp .signInForm .signUpFace .loginWithOtherWay a, section.signUp .signUpForm .signUpFace .loginWithOtherWay a {
-    width: 211.5px;
+    width: 140px;
     height: 55.4px;
-    border: solid 1px #c2c2c2;
     display: flex;
     justify-content: center;
     flex-direction: row;
     background-color: #fff;
     font-family: 'Poppins-Regular';
-    font-size: 21px;
+    font-size: 16px;
     margin: 0 10px;
-    padding: 12px 0;
+    padding: 12px;
     color: black;
     text-decoration: none;
+}
+
+.loginWithOtherWay span a i {
+    color: white;
+    margin: 4px 10px 0 0;
+}
+
+.loginWithOtherWay .facebook_link a {
+    background-color: #385a99 !important;
+    color: white !important;
+}
+
+.loginWithOtherWay .google_links a {
+    background-color: #dc4e41 !important;
+    color: white !important;
+}
+
+.loginWithOtherWay .twitter_links a {
+    background-color: #3999cb !important;
+    color: white !important;
 }
 
 section.signIn .signInForm .signUpFace .loginWithOtherWay a svg, section.signIn .signUpForm .signUpFace .loginWithOtherWay a svg, section.signUp .signInForm .signUpFace .loginWithOtherWay a svg, section.signUp .signUpForm .signUpFace .loginWithOtherWay a svg {
     width: 25px;
     height: 25px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 section.signIn .signInForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signIn .signUpForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signUp .signInForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signUp .signUpForm .signUpFace .loginWithOtherWay a svg path#twitter_1_ {
@@ -843,9 +1053,9 @@ section.signIn .postaJob div .postMyJob, section.signUp .postaJob div .postMyJob
     margin-bottom: 156px;
 }
 
-section.signUp {
-    margin-bottom: 273px;
-}
+/*section.signUp {*/
+/*margin-bottom: 273px;*/
+/*}*/
 
 /***** End Sign in  and Sign Up  scss********/
 section.page-wrap {
@@ -1287,6 +1497,19 @@ section.cryptoHome .cryptoMarkets .learnMore .btn, section.cryptoHome .cryptoMar
     margin-right: 30px;
 }
 
+a.btn-def {
+    background: white !important;
+    border: 1px solid #35AC7C !important;
+}
+
+a.btn-def:hover {
+    color: #35AC7C !important;
+}
+
+section.cryptoHome .cryptoMarkets .learnMore .btn-def {
+    background: white;
+}
+
 section.cryptoHome .cryptoMarkets .learnMore .btn:hover, section.cryptoHome .cryptoMarkets .learnMore .btn-def:hover {
     background: transparent;
     color: #35AC7C;
@@ -1325,7 +1548,7 @@ section.prices .priceText h1 {
 
 section.prices .priceText span, section.prices .priceText p {
     color: black;
-    font-size: 25px;
+    font-size: 24px;
     font-family: 'Poppins-Light';
 }
 
@@ -1969,5 +2192,11 @@ input.erorr-message.form-control {
 @media screen and (max-width: 1350px) and (min-width: 1024px) {
     section.cryptoHome {
         padding-top: 50px !important;
+    }
+}
+
+@media screen  and (max-width: 1350px) and (min-width: 1024px) {
+    .checkPrice ul .radioButtons {
+        width: auto !important;
     }
 }

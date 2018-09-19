@@ -19,13 +19,13 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="sectionTitle">
-                    <h1>Tutorials</h1>
+                    <h1>Tutorials & Documentation</h1>
                     <p>Follow the tutorials to purchase ITT tokens and get started with the trading bot.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="tuotrialsPart getStart">
                     <div class="boxHeader"></div>
                     <div class="boxContent">
@@ -40,11 +40,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="tuotrialsPart userGuide">
                     <div class="boxHeader"></div>
                     <div class="boxContent">
-                        <h5>Bot User Guide</h5>
+                        <h5>SatoshiBot User Guide</h5>
                         <p>Learn useful commands to get
                             the most out of the ITF trading bot.</p>
                         <a href="#">View Tutorial
@@ -53,11 +53,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="tuotrialsPart howBuy">
                     <div class="boxHeader"></div>
                     <div class="boxContent">
-                        <h5>How To Buy ITT Tokens</h5>
+                        <h5>Disclaimer and Terms of Use</h5>
                         <p>Follow the guide to making your
                             first ITT token purchase.</p>
                         <a href="#">View Tutorial
@@ -66,20 +66,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="tuotrialsPart info">
-                    <div class="boxHeader"></div>
-                    <div class="boxContent">
-                        <h5>Info Bot User Guide</h5>
-                        <p>Learn useful commands to get
-                            the most out of the ITF info bot
-                            for Groups.</p>
-                        <a href="#">View Tutorial
-                            <em class="feed anim-menu"></em>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            {{--<div class="col-md-3">--}}
+                {{--<div class="tuotrialsPart info">--}}
+                    {{--<div class="boxHeader"></div>--}}
+                    {{--<div class="boxContent">--}}
+                        {{--<h5>Info Bot User Guide</h5>--}}
+                        {{--<p>Learn useful commands to get--}}
+                            {{--the most out of the ITF info bot--}}
+                            {{--for Groups.</p>--}}
+                        {{--<a href="#">View Tutorial--}}
+                            {{--<em class="feed anim-menu"></em>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
     </div>
 </section>
@@ -89,7 +89,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="sectionTitle">
-                    <h1>Cryptocurrency 101</h1>
+                    <h1>Crypto 101</h1>
                     <p>New to cryptocurrency? Our 101 guides will get you up to speed.</p>
                 </div>
             </div>
@@ -97,9 +97,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="newToCryptocurrency">
-                    <p>How Trading Bots
-                        Influence Cryptocurrency
-                        Markets</p>
+                    <p>What is Bitcoin?</p>
                     <a href="#">View Guide
                         <em class="feed anim-menu"></em>
                     </a>
@@ -107,8 +105,7 @@
             </div>
             <div class="col-md-3">
                 <div class="newToCryptocurrency">
-                    <p>How To Safely Store
-                        Cryptocurrencies</p>
+                    <p>Accessing and Storing Your Crypto</p>
                     <a href="#">View Guide
                         <em class="feed anim-menu"></em>
                     </a>
@@ -116,8 +113,7 @@
             </div>
             <div class="col-md-3">
                 <div class="newToCryptocurrency">
-                    <p>The Ichimoku
-                        Advantage</p>
+                    <p>Technical Analysis 101</p>
                     <a href="#">View Guide
                         <em class="feed anim-menu"></em>
                     </a>
@@ -125,9 +121,7 @@
             </div>
             <div class="col-md-3">
                 <div class="newToCryptocurrency">
-                    <p>Using Technical
-                        Analysis To Trade
-                        Cryptocurrencies</p>
+                    <p>How Bots Influence Trading</p>
                     <a href="#">View Guide
                         <em class="feed anim-menu"></em>
                     </a>

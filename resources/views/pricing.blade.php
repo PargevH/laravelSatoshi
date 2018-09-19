@@ -21,15 +21,21 @@
             <div class="col-md-5">
                 <div class="checkPrice">
                     <ul id="myCheckbox">
-                        <li class="active">
-                            <div class="radioButtons">
+                        <li>
+                            <div class="radioButtons active">
                                 <label class="checkContainer">Free
                                     <input type="radio" checked="checked" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
                                 <span class="float-right rightSide">Free</span>
                             </div>
-
+                            <button class="checkbox">Check Out</button>
+                            <ul class="dropdown_text">
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                            </ul>
                         </li>
                         <li>
                             <div class="radioButtons">
@@ -39,6 +45,13 @@
                                 </label>
                                 <span class="float-right rightSide"> <span>$20</span> USD / <span>month</span> </span>
                             </div>
+                            <button class="checkbox">Check Out</button>
+                            <ul class="dropdown_text">
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                            </ul>
                         </li>
                         <li>
                             <div class="radioButtons">
@@ -48,6 +61,13 @@
                                 </label>
                                 <span class="float-right rightSide">Q3 2018</span>
                             </div>
+                            <button class="checkbox">Check Out</button>
+                            <ul class="dropdown_text">
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                            </ul>
                         </li>
                         <li>
                             <div class="radioButtons">
@@ -57,6 +77,13 @@
                                 </label>
                                 <span class="float-right rightSide">Q3 2018</span>
                             </div>
+                            <button class="checkbox">Check Out</button>
+                            <ul class="dropdown_text">
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                                <li><p>abjdfuh</p></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -100,34 +127,50 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="quest">
-                    <h5 class="question">How do I get started with Telegram?</h5>
-                    <p class="answer">You can learn more about Telegram on their website.</p>
+                    <h5 class="question">How do I access the private Satoshi Signals social media feeds?</h5>
+                    <p class="answer">
+                        Access to our private social media feeds for news and price analysis is
+                        obtained by subscribing to the Starter, Pro, or Advanced packages.
+                    </p>
+                </div>
+                <div class="quest">
+                    <h5 class="question">How do I upgrade my subscription?</h5>
+                    <p class="answer">
+                        In your my account section in the member area look for the subscription
+                        you are currently subscribed to. You can select a different package and
+                        the changes will take effect in the next pay period.
+                    </p>
                 </div>
                 <div class="quest">
                     <h5 class="question">How do I pay?</h5>
-                    <p class="answer">The Starter plan is $20 USD per month, payable in ITT tokens. After
-                        you purchase ITT tokens on a cryptocurrency exchange, you can
-                        transfer them to us within the Telegram Bot.</p>
-                </div>
-                <div class="quest">
-                    <h5 class="question">How do I transfer ITT tokens?</h5>
                     <p class="answer">Please refer to the User Guide.</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="quest">
-                    <h5 class="question">What should I do after I install Telegram?</h5>
-                    <p class="answer">You need to add @intelligenttradingbot in your Telegram app, then
-                        complete the registration wizard. Here are step-by-step instructions.</p>
+                    <h5 class="question">How do I pay?</h5>
+                    <p class="answer">
+                        Add a package to your cart and choose your payments method. Once we
+                        have received your order and payment we will email you with your
+                        subscription details.
+                    </p>
                 </div>
                 <div class="quest">
                     <h5 class="question">Does my subscription automatically renew?</h5>
-                    <p class="answer">No. You must manually transfer additional ITT tokens after your
-                        30-day subscription runs out.</p>
+                    <p class="answer">
+                        Yes, your subscription is charged on a monthly/yearly basis if you have
+                        paid with a credit/debit card or paypal. If you are paying with
+                        cryptocurrency we will send you a monthly invoice with payment
+                        instructions.
+                    </p>
                 </div>
                 <div class="quest">
-                    <h5 class="question">How do I transfer ITT tokens?</h5>
-                    <p class="answer">Please refer to the User Guide.</p>
+                    <h5 class="question">How do I cancel my subscription?</h5>
+                    <p class="answer">
+                        Login to the member area and look for the my account section. Once in
+                        your account page please click cancel your subscription and proceed.
+                        We will email you afterwards confirming your cancellation.
+                    </p>
                 </div>
             </div>
         </div>
