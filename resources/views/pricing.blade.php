@@ -31,12 +31,18 @@
                             </div>
                             <button class="checkbox">Check Out</button>
                             <ul class="dropdown_text">
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
+                                <li class="list-inline-item">
+                                    <p class="second_dropdown_button">Biweekly Crypto Newsletter</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="second_dropdown_button">Updates on Satoshi Signals strategy performance</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="second_dropdown_button">Free signal giveaway</p>
+                                </li>
                             </ul>
                         </li>
+
                         <li>
                             <div class="radioButtons">
                                 <label class="checkContainer">Starter
@@ -45,44 +51,120 @@
                                 </label>
                                 <span class="float-right rightSide"> <span>$20</span> USD / <span>month</span> </span>
                             </div>
+                            <button class="checkbox">checkbox</button>
+                            <ul class="dropdown_text">
+                                <li class="list-inline-item">
+                                    <p class="second_dropdown_button">
+                                        Access to signals from one of the following cryptocurrency trading
+                                        strategies:
+                                        <span><i class="fa fa-chevron-down"></i></span>
+                                    </p>
+                                    <ul id="second_dropdown">
+                                        <li>
+                                            <p class="second_dropdown_button">Momentum:</p>
+                                        </li>
+                                        <li>
+                                            <p class="second_dropdown_button">Bitcoin Long/Short (Q4 2018):</p>
+                                        </li>
+                                        <li>
+                                            <p class="second_dropdown_button">Bitcoin Oversold (Q4 2018):</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="second_dropdown_button">
+                                        Access to private Satoshi Signals Twitter, Discord, and Telegram feeds
+                                        <span><i class="fa fa-chevron-down"></i></span>
+                                    </p>
+                                    <ul id="second_dropdown">
+                                        <li>
+                                            <p class="second_dropdown_button">Momentum:</p>
+                                        </li>
+                                        <li>
+                                            <p class="second_dropdown_button">Live updates for all trade signals occurring</p>
+                                        </li>
+                                        <li>
+                                            <p class="second_dropdown_button">Digital asset news, price analysis, charts, and research</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="radioButtons">
+                                <label class="checkContainer">Pro Q4 2018
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span class="float-right rightSide">$250/Month</span>
+                            </div>
                             <button class="checkbox">Check Out</button>
                             <ul class="dropdown_text">
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
+                                <li class="list-inline-item">
+                                    <p class="second_dropdown_button">Access to signals from all of our proprietary trading strategies
+                                        (Bitcoin Long/Short, Momentum, Bitcoin Oversold):</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="second_dropdown_button">Automated Starter</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="second_dropdown_button">Bitcoin Oversold (Q4 2018):</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
                             <div class="radioButtons">
-                                <label class="checkContainer">Pro
+                                <label class="checkContainer">Auto Starter
                                     <input type="radio" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
-                                <span class="float-right rightSide">Q3 2018</span>
+                                <span class="float-right rightSide">$750/Month</span>
                             </div>
                             <button class="checkbox">Check Out</button>
                             <ul class="dropdown_text">
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
+                                <li class="list-inline-item">
+                                    <p class="second_dropdown_button">
+                                        SatoshiBot Automated Trading Software for one of our
+                                        cryptocurrency trading strategies
+                                        <span><i class="fa fa-chevron-down"></i></span>
+                                    </p>
+                                    <ul id="second_dropdown">
+                                        <li>
+                                            <p class="second_dropdown_button">
+                                                Software that exposes users to automated trading. SatoshiBot receives
+                                                our trading signals and executes trades on your behalf using your
+                                                exchange credentials.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li>
                             <div class="radioButtons">
-                                <label class="checkContainer">Advanced
+                                <label class="checkContainer">Auto Pro
                                     <input type="radio" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
-                                <span class="float-right rightSide">Q3 2018</span>
+                                <span class="float-right rightSide">$1000/Month</span>
                             </div>
                             <button class="checkbox">Check Out</button>
                             <ul class="dropdown_text">
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
-                                <li><p>abjdfuh</p></li>
+                                <li class="list-inline-item">
+                                    <p class="second_dropdown_button">
+                                        SatoshiBot Automated Trading Software for all of our proprietary
+                                        trading strategies (Bitcoin Long/Short, Momentum, Bitcoin Oversold)
+                                        <span><i class="fa fa-chevron-down"></i></span>
+                                    </p>
+                                    <ul id="second_dropdown">
+                                        <li>
+                                            <p class="second_dropdown_button">
+                                                The ultimate Satoshi Signals package.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                     </ul>

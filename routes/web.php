@@ -27,6 +27,8 @@ Route::view('policy', 'policy')->name('policy');
 
 Route::view('contact', 'contact')->name('contact');
 
+Route::view('payment', 'payment')->name('payment');
+
 Auth::routes(['verify' => true]);
 
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');

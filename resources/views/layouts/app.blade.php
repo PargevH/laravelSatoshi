@@ -22,7 +22,6 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
-
     <link rel="stylesheet" href="{{ asset('css/libs/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/libs/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/libs/owl.carousel.min.css') }}">
@@ -79,7 +78,7 @@
                                                 <a role="menuitem" tabindex="-1" href="#">Account Settings</a>
                                             </li>
                                             <li role="presentation">
-                                                <a role="menuitem" tabindex="-1" href="#">Payment</a>
+                                                <a role="menuitem" tabindex="-1" href="{{route('payment')}}">Payment</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -205,6 +204,10 @@
         <script src="{{ asset('js/otherjs/owl.carousel.min.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
     </footer>
-
+    <div>
+        <a href="#">
+            <span id="fixed" class="scrollToTop"></span>
+        </a>
+    </div>
 </body>
 </html>
