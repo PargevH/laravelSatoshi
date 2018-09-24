@@ -335,6 +335,19 @@ section.pricingType .starter .mainPoints ul li:after {
     transition: .4s;
 }
 
+.personal-info {
+    margin: auto;
+}
+
+.accountH2 {
+    text-align: center;
+}
+
+.btnAcc {
+    background: #329f77;
+    color: white;
+}
+
 input:checked + .slider {
     background-color: #329f77;
 }

@@ -29,6 +29,14 @@ Route::view('contact', 'contact')->name('contact');
 
 Route::view('payment', 'payment')->name('payment');
 
+
+
+Route::view('referral', 'referral')->name('referral');
+
+Route::get('users/{user}',  ['as' => 'users.edit', 'uses' => 'UserController@edit']);
+Route::patch('users/{user}/update',  ['as' => 'users.update', 'uses' => 'UserController@update']);
+//Route::patch('users/{user}/updatePass',  ['as' => 'users.updatePass', 'uses' => 'UserController@update']);
+
 Auth::routes(['verify' => true]);
 
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');

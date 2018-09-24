@@ -152,7 +152,7 @@
                     </ul>
 
                     <div class="learnMore wow slideInLeft" data-wow-duration="2.5s">
-                        <a class="btn" href="#aboutUs" type="button">Learn More</a>
+                        <a type="button" class="btn scroll" target="about">Learn More</a>
                         <a class="btn-def" href="{{route('pricing')}}" type="button">View Plans</a>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
     </div>
 </section>
 
-<section class="prices text-center" id="aboutUs" >
+<section class="prices text-center" id="contact" >
     <div class="content">
         <div class="row">
             <div class="col-md-12 wow fadeInUp" data-wow-duration="2s">
@@ -294,4 +294,13 @@
         </div>
     </div>
 </section>
+<script>
+
+    $('.scroll').click(function() {
+        $('body').animate({
+            scrollTop: eval($('#' + $(this).attr('target')).offset().top - 70)
+        }, 1000);
+    });
+
+</script>
 @endsection

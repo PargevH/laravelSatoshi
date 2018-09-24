@@ -7,12 +7,6 @@ $(document).ready(function () {
     new WOW().init();
 });
 
-//yakor
-$('a[href^="#"]').click(function () {
-    var target = $(this).attr('href');
-    $('html, body').animate({scrollTop: $(target).offset().top }, 800);
-    return false;
-});
 
 
 // add active class radio buttons

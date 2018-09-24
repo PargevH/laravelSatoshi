@@ -6,14 +6,12 @@
 
 
         <div class="row">
-            <aside class="col-sm-6">
-
+            <aside class="col-sm-6" style="margin: auto;">
                 <article class="card">
                     <div class="card-body p-5">
-
                         <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+                                <a class="nav-link active nav-link-credit" data-toggle="pill" href="#nav-tab-card">
                                     <i class="fa fa-credit-card"></i> Credit Card</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
@@ -22,7 +20,6 @@
                                 <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
                                     <i class="fa fa-university"></i>  Bank Transfer</a></li>
                         </ul>
-
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="nav-tab-card">
                                 <p class="alert alert-success">Some text success or error</p>
@@ -62,13 +59,13 @@
                                             </div> <!-- form-group.// -->
                                         </div>
                                     </div> <!-- row.// -->
-                                    <button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
+                                    <button class="subscribe btn btnAcc btn-block" type="button"> Confirm  </button>
                                 </form>
                             </div> <!-- tab-pane.// -->
                             <div class="tab-pane fade" id="nav-tab-paypal">
                                 <p>Paypal is easiest way to pay online</p>
                                 <p>
-                                    <button type="button" class="btn btn-primary"> <i class="fab fa-paypal"></i> Log in my Paypal </button>
+                                    <button type="button" class="btn btnAcc"> <i class="fab fa-paypal"></i> Log in my Paypal </button>
                                 </p>
                                 <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. </p>

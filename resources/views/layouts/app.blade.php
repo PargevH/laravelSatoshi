@@ -72,10 +72,10 @@
                                                 <a role="menuitem" tabindex="-1" href="#">My Subscriptions</a>
                                             </li>
                                             <li role="presentation">
-                                                <a role="menuitem" tabindex="-1" href="#">Referrals</a>
+                                                <a role="menuitem" tabindex="-1" href="{{route('referral')}}">Referrals</a>
                                             </li>
                                             <li role="presentation">
-                                                <a role="menuitem" tabindex="-1" href="#">Account Settings</a>
+                                                <a role="menuitem" tabindex="-1" href="{{route('users.edit', $user_id = Auth::user()->id)}}">Account Settings</a>
                                             </li>
                                             <li role="presentation">
                                                 <a role="menuitem" tabindex="-1" href="{{route('payment')}}">Payment</a>

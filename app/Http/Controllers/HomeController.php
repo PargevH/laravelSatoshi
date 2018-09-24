@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use Users;
 
 class HomeController extends Controller
 {
@@ -25,4 +27,28 @@ class HomeController extends Controller
     {
         return view('index');
     }
+
+    public function edit(User $user)
+    {
+        $user = Auth::user();
+        return view('accountSettings', compact('user'));
+    }
+
+    public function update(User $user)
+    {
+        $this->validate(request(), [
+            'name' => 'required',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6|confirmed'
+        ]);
+
+        $user->name = request('name');
+        $user->email = request('email');
+        $user->password = bcrypt(request('password'));
+
+        $user->save();
+
+        return back();
+    }
+
 }
