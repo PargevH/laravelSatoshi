@@ -51,7 +51,7 @@
                                 </label>
                                 <span class="float-right rightSide"> <span>$20</span> USD / <span>month</span> </span>
                             </div>
-                            <button class="checkbox">checkbox</button>
+                            <button class="checkbox">check Out</button>
                             <ul class="dropdown_text">
                                 <li class="list-inline-item">
                                     <p class="second_dropdown_button">

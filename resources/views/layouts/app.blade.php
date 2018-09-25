@@ -178,16 +178,10 @@
             <div class="row text-center">
                 <div class="col-md-12">
                     <div class="socialLinks">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="#"><img src="{{ asset('img/facebook-logo-button.png') }}" alt=""></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><img src="{{ asset('img/twitter-logo-button.png') }}" alt=""></a>
-                            </li>
-                            <li class="list-inline-item google">
-                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                            </li>
+                        <ul class="socialIcons">
+                            <li class="facebook"><a href="#"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+                            <li class="instagram"><a href="#"><i class="fa fa-fw fa-google-plus"></i>google plus</a></li>
                         </ul>
                     </div>
                     <div class="copyRight">
