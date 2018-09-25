@@ -22,6 +22,12 @@ $('#myCheckbox').on('click', '.radioButtons', function (e) {
 
 });
 
+$("a.scroll").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#contact").offset().top},
+        'slow');
+});
+
 
 // $(".checkContainer :input").click(function () {
 //     $(".checkContainer :input").each(function() {

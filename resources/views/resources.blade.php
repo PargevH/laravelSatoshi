@@ -66,20 +66,6 @@
                     </div>
                 </div>
             </div>
-            {{--<div class="col-md-3">--}}
-                {{--<div class="tuotrialsPart info">--}}
-                    {{--<div class="boxHeader"></div>--}}
-                    {{--<div class="boxContent">--}}
-                        {{--<h5>Info Bot User Guide</h5>--}}
-                        {{--<p>Learn useful commands to get--}}
-                            {{--the most out of the ITF info bot--}}
-                            {{--for Groups.</p>--}}
-                        {{--<a href="#">View Tutorial--}}
-                            {{--<em class="feed anim-menu"></em>--}}
-                        {{--</a>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
         </div>
     </div>
 </section>

@@ -152,7 +152,7 @@
                     </ul>
 
                     <div class="learnMore wow slideInLeft" data-wow-duration="2.5s">
-                        <a type="button" class="btn scroll" target="about">Learn More</a>
+                        <a type="button" class="btn scroll" target="contact">Learn More</a>
                         <a class="btn-def" href="{{route('pricing')}}" type="button">View Plans</a>
                     </div>
                 </div>
@@ -208,29 +208,6 @@
     </div>
 </section>
 
-{{--<section class="prices">--}}
-    {{--<div class="content">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-6 wow slideInLeft" data-wow-duration="2s">--}}
-                {{--<div class="priceText">--}}
-                    {{--<h1>Charts</h1>--}}
-                    {{--<p>Telegram</p>--}}
-                    {{--<p>Telegram--}}
-                        {{--/c btc will return a 3 day chart of BTC <br>--}}
-                        {{--/ac command will allow you get periods of days and hours Also USD, EUR, and BTC pairings work--}}
-                        {{--Ex: /ac eth usd hour 70 Discord--}}
-                        {{--!c btc will return a 3 day chart of BTC</p>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="col-md-6 wow slideInLeft" data-wow-duration="2s">--}}
-                {{--<div class="groupImage">--}}
-                    {{--<img src="{{ asset('img/d.png') }}" alt="">--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</section>--}}
-
 <section class="prices">
     <div class="content">
         <div class="row">
@@ -269,11 +246,6 @@
                     </p>
                 </div>
             </div>
-            {{--<div class="col-md-6 wow fadeInUp" data-wow-duration="2.2s">--}}
-                {{--<div class="groupImage float-right">--}}
-                    {{--<img src="{{ asset('img/gf.png') }}">--}}
-                {{--</div>--}}
-            {{--</div>--}}
         </div>
     </div>
 </section>
@@ -294,13 +266,4 @@
         </div>
     </div>
 </section>
-<script>
-
-    $('.scroll').click(function() {
-        $('body').animate({
-            scrollTop: eval($('#' + $(this).attr('target')).offset().top - 70)
-        }, 1000);
-    });
-
-</script>
 @endsection

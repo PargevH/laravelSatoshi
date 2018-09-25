@@ -67,50 +67,6 @@
                     </div>
                 </form>
             </div>
-            {{--<div class="col-md-6 personal-info">--}}
-                {{--<div class="alert alert-info alert-dismissable">--}}
-                    {{--<a class="panel-close close" data-dismiss="alert">×</a>--}}
-                    {{--<i class="fa fa-coffee"></i>--}}
-                    {{--This is an <strong>.alert</strong>. Use this to show important messages to the user.--}}
-                {{--</div>--}}
-                {{--<h3>Password</h3>--}}
-
-                {{--<form method="POST" action="{{route('users.updatePass', $user = Auth::user())}}">--}}
-                    {{--@csrf--}}
-                    {{--{{ method_field('patch') }}--}}
-
-
-
-                    {{--<div class="input-group mb-3 mainRegInput">--}}
-                        {{--<input name="name" type="text" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="Password"--}}
-                               {{--aria-label="password"--}}
-                               {{--aria-describedby="basic-addon1">--}}
-                        {{--@if ($errors->has('password'))--}}
-                            {{--<span class="invalid-feedback" role="alert">--}}
-                                            {{--{{ $errors->first('password') }}--}}
-                                    {{--</span>--}}
-                        {{--@endif--}}
-                    {{--</div>--}}
-                    {{--<div class="input-group mb-3 mainRegInput">--}}
-                        {{--<input name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="New Password"--}}
-                               {{--aria-label="password"--}}
-                               {{--aria-describedby="basic-addon1">--}}
-                        {{--@if ($errors->has('password'))--}}
-                            {{--<span class="invalid-feedback" role="alert">--}}
-                                            {{--{{ $errors->first('password') }}--}}
-                                    {{--</span>--}}
-                        {{--@endif--}}
-                    {{--</div>--}}
-                    {{--<div class="input-group mb-3 mainRegInput">--}}
-                        {{--<input name="password_confirmation" type="password" class="form-control"--}}
-                               {{--placeholder="Confirm New Password"--}}
-                               {{--aria-label="confirm password" aria-describedby="basic-addon1">--}}
-                    {{--</div>--}}
-                    {{--<div>--}}
-                        {{--<button type="submit" class="btn btn-primary login">Edit Password</button>--}}
-                    {{--</div>--}}
-                {{--</form>--}}
-            {{--</div>--}}
         </div>
     </div>
 @endsection

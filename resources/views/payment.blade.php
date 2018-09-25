@@ -11,14 +11,14 @@
                     <div class="card-body p-5">
                         <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active nav-link-credit" data-toggle="pill" href="#nav-tab-card">
-                                    <i class="fa fa-credit-card"></i> Credit Card</a></li>
+                                <a class="nav-link active nav-link-credit nav-link-color" data-toggle="pill" href="#nav-tab-card">
+                                    <i class="fa fa-credit-card icon-color"></i> Credit Card</a></li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
-                                    <i class="fab fa-paypal"></i>  Paypal</a></li>
+                                <a class="nav-link nav-link-color" data-toggle="pill" href="#nav-tab-paypal">
+                                    <i class="fab fa-paypal icon-color"></i>  Paypal</a></li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
-                                    <i class="fa fa-university"></i>  Bank Transfer</a></li>
+                                <a class="nav-link nav-link-color" data-toggle="pill" href="#nav-tab-bank">
+                                    <i class="fa fa-university icon-color"></i>  Bank Transfer</a></li>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="nav-tab-card">

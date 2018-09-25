@@ -14,19 +14,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <title>Home</title>
+    <!-- Links -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon.png') }}"/>
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/libs/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/libs/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/libs/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light main-navbar">
@@ -66,7 +65,7 @@
                                 {{--<a class="nav-link">{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}</a>--}}
                                     <div class="dropdown">
                                         <button class="btn btn-default dropdown-name dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">My Account
-                                            <span class="caret"></span></button>
+                                           </button>
                                         <ul class="dropdown-menu dropdown-name-menu" role="menu" aria-labelledby="menu1">
                                             <li  role="presentation">
                                                 <a role="menuitem" tabindex="-1" href="#">My Subscriptions</a>
@@ -205,9 +204,13 @@
         <script src="{{ asset('js/main.js') }}"></script>
     </footer>
     <div>
-        <a href="#">
-            <span id="fixed" class="scrollToTop"></span>
-        </a>
+            @guest
+
+                @else
+                    <a href="#">
+                        <span id="fixed" class="scrollToTop"></span>
+                    </a>
+            @endguest
     </div>
 </body>
 </html>

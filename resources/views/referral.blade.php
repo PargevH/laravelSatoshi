@@ -2,18 +2,68 @@
 
 
 @section('content')
-    <section class="pricingType">
+
+
+
+
+
+
+
+
+
+    <section class="pricingType" style="margin-top: unset;">
         <div class="content">
             <div class="row">
-                <div class="col-md-5">
-                   <ul>
-                       <li>
-                           Your referring ID <input type="text" value="1111" style="display: inline-block;width: auto;min-width: 400px;margin-left: 30px;background: #eee;height: auto;padding: 5px;" disabled/>
-                       </li>
-                       <li>
-                           Your referring URI <input type="text" value="2222" style="display: inline-block;width: auto;min-width: 400px;margin-left: 30px;background: #eee;height: auto;padding: 5px;" disabled/>
-                       </li>
-                   </ul>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="exampleInputReferringID">My Referral ID:</label>
+                                    <input type="text" class="form-control" value="1111" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputReferringURI">Referral Link:</label>
+                                    <input type="text" class="form-control" value="2222" disabled>
+                                    <div id="socialHolder">
+                                        <div id="socialShare" class="btn-group share-group">
+                                            <a data-toggle="dropdown" class="btn btnAcc share" style="color: #fff;border-radius: 4px;">Share
+                                                <i class="fa fa-share-alt fa-inverse"></i>
+                                            </a>
+                                            <ul class="dropdown-menu social-nav">
+
+                                                    <li><a href="#" target="_blank" title="Twitter" rel="nofollow" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#" target="_blank" title="Facebook" rel="nofollow" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#" target="_blank" title="snapchat" rel="nofollow" class="snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+                                                    <li><a href="#" target="_blank" title="Linkedin" rel="nofollow" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                                    <li><a href="#" target="_blank" title="Slack" rel="nofollow" class="slack"><i class="fa fa-slack"></i></a></li>
+                                                {{--<li>--}}
+                                                    {{--<a data-original-title="Facebook" rel="tooltip"  href="#" class="btn btn-facebook" data-placement="left">--}}
+                                                        {{--<i class="fa fa-facebook"></i>--}}
+                                                    {{--</a>--}}
+                                                {{--</li>--}}
+                                                {{--<li>--}}
+                                                    {{--<a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter" data-placement="left">--}}
+                                                        {{--<i class="fa fa-twitter"></i>--}}
+                                                    {{--</a>--}}
+                                                {{--</li>--}}
+                                                {{--<li>--}}
+                                                    {{--<a data-original-title="LinkedIn" rel="tooltip"  href="#" class="btn btn-linkedin" data-placement="left">--}}
+                                                        {{--<i class="fa fa-linkedin"></i>--}}
+                                                    {{--</a>--}}
+                                                {{--</li>--}}
+                                                {{--<li>--}}
+                                                    {{--<a data-original-title="Snapchat" rel="tooltip"  href="#" class="btn btn-snapchat," data-placement="left">--}}
+                                                        {{--<i class="fa fa-snapchat-square"></i>--}}
+                                                    {{--</a>--}}
+                                                {{--</li>--}}
+                                            {{--</ul>--}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
