@@ -1745,6 +1745,10 @@ input:focus, textarea:focus, select:focus {
     border-bottom: 2px solid #35AC7C;
 }
 
+.nav-color {
+    color: #000;
+}
+
 /****End header Scss ****/
 footer {
     border-top: 1px solid #C2C2C2;

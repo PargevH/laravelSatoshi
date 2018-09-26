@@ -155,16 +155,16 @@
                     <div class="socialLinks">
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a class="nav-link" href="{{route('pricing')}}"> PRICING </a>
+                                <a class="nav-link nav-color" href="{{route('pricing')}}"> PRICING </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="nav-link" href="{{route('resources')}}"> RESOURCES </a>
+                                <a class="nav-link nav-color" href="{{route('resources')}}"> RESOURCES </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="nav-link" href="{{route('news')}}"> NEWS & UPDATES </a>
+                                <a class="nav-link nav-color" href="{{route('news')}}"> NEWS & UPDATES </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="nav-link" href="{{route('contact')}}"> CONTACT </a>
+                                <a class="nav-link nav-color" href="{{route('contact')}}"> CONTACT </a>
                             </li>
                         </ul>
                     </div>
