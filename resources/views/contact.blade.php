@@ -16,9 +16,9 @@
                 <div class="mainContactInfo">
                     <div class="location">
                         <h5>Location</h5>
-                        <p>Pacific Union Real Estate <br>
-                            1290 Howard Avenue, Suite 201 <br>
-                            Burlingame, California 94010</p>
+                        <p>
+                            3280 Peachtree Rd NE Atlanta, GA 30305
+                        </p>
                     </div>
                     <div class="mail">
                         <h5>Mail</h5>

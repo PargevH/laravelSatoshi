@@ -191,6 +191,8 @@
             </div>
         </div>
         <script src="{{ asset('js/otherjs/jquery-3.3.1.min.js') }}"></script>
+        {{--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>--}}
+        <script src="{{ asset('js/share.js') }}"></script>
         <script src="{{ asset('js/otherjs/popper.min.js') }}"></script>
         <script src="{{ asset('js/otherjs/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/otherjs/wow.min.js') }}"></script>

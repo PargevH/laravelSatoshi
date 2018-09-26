@@ -67,11 +67,11 @@
                                 </span>
                                     <span class="twitter_links">
                                     <a href="{{ url('/auth/twitter') }}">
-                                      <i class="fab fa-twitter"></i>   Twitter</a>
+                                      <i class="fa fa-twitter"></i>   Twitter</a>
                                     </span>
                                     <span class="google_links">
                                     <a href="{{ url('/auth/google') }}">
-                                      <i class="fab fa-google-plus-g"></i>  Google</a>
+                                      <i class="fa fa-google-plus-g"></i>  Google</a>
                                 </span>
                                 </div>
                             </div>
