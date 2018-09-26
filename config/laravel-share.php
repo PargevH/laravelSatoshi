@@ -25,6 +25,14 @@ return [
             'uri' => 'https://twitter.com/intent/tweet',
             //'text' => 'Default share text'
         ],
+        'snapchat' => [
+            'uri' => 'https://snapchat.com/share',
+            //'text' => 'Default share text'
+        ],
+        'slack' => [
+            'uri' => 'https://slack.com/share',
+            //'text' => 'Default share text'
+        ],
     ],
 
     /*

@@ -36,13 +36,15 @@
                                                 ->facebook()
                                                 ->linkedin('Extra linkedin summary can be passed here')
                                                 ->twitter()
+                                                ->snapchat()
+                                                ->slack()
                                             ?>
 
 
                                                 {{--<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://jorenvanhocht.be" target="_blank" title="Facebook" rel="nofollow" id="facebookId" class="facebook"><i class="fa fa-facebook"></i></a></li>--}}
                                                 {{--<li><a href="#" target="_blank" title="Linkedin" rel="nofollow" class="linkedin"><i class="fa fa-linkedin"></i></a></li>--}}
                                                 {{--<li><a href="#" target="_blank" title="Twitter" rel="nofollow" class="twitter"><i class="fa fa-twitter"></i></a></li>--}}
-                                                <li><a href="#" target="_blank" title="snapchat" rel="nofollow" class="snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+                                                {{--<li><a href="#" target="_blank" title="snapchat" rel="nofollow" class="snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>--}}
                                                 <li><a href="#" target="_blank" title="Slack" rel="nofollow" class="slack"><i class="fa fa-slack"></i></a></li>
                                             </ul>
                                         </div>
