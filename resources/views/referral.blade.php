@@ -2,15 +2,6 @@
 
 
 @section('content')
-
-
-
-
-
-
-
-
-
     <section class="pricingType" style="margin-top: unset;">
         <div class="content">
             <div class="row">
@@ -31,14 +22,14 @@
                                                 <i class="fa fa-share-alt fa-inverse"></i>
                                             </a>
                                             <ul class="dropdown-menu social-nav">
-                                            <?php
-                                            echo Share::page('http://referral_link.be')
-                                                ->facebook()
-                                                ->linkedin('Extra linkedin summary can be passed here')
-                                                ->twitter()
-                                                ->snapchat()
-                                                ->slack()
-                                            ?>
+                                                <?php
+                                                echo Share::page('http://jorenvanhocht.be')
+                                                    ->facebook()
+                                                    ->linkedin('Extra linkedin summary can be passed here')
+                                                    ->twitter()
+                                                    ->snapchat()
+                                                    ->slack()
+                                                ?>
                                             </ul>
                                         </div>
                                     </div>

@@ -403,6 +403,11 @@ section.pricingType .information .mainPoints ul li:after {
     left: 0;
 }
 
+.mainPointsPricing {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
 .google {
     height: 46px;
     width: 46px;
@@ -540,7 +545,7 @@ section.pricingType .information .mainPoints ul li:after {
 
 .checkPrice ul .radioButtons .rightSide {
     font-family: "Poppins-Light";
-    font-size: 12px;
+    font-size: 13px;
     color: black;
 }
 
@@ -612,6 +617,10 @@ section.pricingType .information .mainPoints ul li:after {
 
 #AutoPro {
     display: none;
+}
+
+.rightDiv h3{
+color: #329f77;
 }
 
 input:checked + .slider {
@@ -1990,6 +1999,30 @@ input.erorr-message.form-control {
 .mail-input-val input {
     display: block;
     width: 100% !important;
+}
+
+#myRadioGroup .desc {
+    display: none;
+}
+#myRadioGroup .desc:first-child {
+    display: block;
+}
+
+div.mainPointsPricing ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+div.mainPointsPricing ul  li {
+    padding-left: 16px;
+}
+
+div.mainPointsPricing ul  li:before {
+    content: "•";
+    padding-right: 8px;
+    color: #329f77;
+    font-size: 28px;
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {

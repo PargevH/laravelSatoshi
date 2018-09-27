@@ -26,11 +26,11 @@ return [
             //'text' => 'Default share text'
         ],
         'snapchat' => [
-            'uri' => 'https://snapchat.com/share',
+            'uri' => 'https://www.snapchat.com/add/username?',
             //'text' => 'Default share text'
         ],
         'slack' => [
-            'uri' => 'https://slack.com/share',
+            'uri' => 'http://s7.addthis.com/static/slack.html?shareURL=',
             //'text' => 'Default share text'
         ],
     ],
