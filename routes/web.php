@@ -29,6 +29,8 @@ Route::view('contact', 'contact')->name('contact');
 
 Route::view('payment', 'payment')->name('payment');
 
+Route::get('payment', 'PaymentController@index')->name('payment');
+
 Route::get('referral', 'ReferralController@index')->name('referral');
 
 Route::get('users/{user}',  ['as' => 'users.edit', 'uses' => 'UserController@edit']);

@@ -45,4 +45,8 @@ $(document).ready(function () {
 
 });
 
+$('.btn-1').click(function () {
+    $valRadio = $("input[name='radio']:checked").val()
+    $(location).attr('href', "payment?value="+$valRadio);
+})
 

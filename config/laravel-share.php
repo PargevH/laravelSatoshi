@@ -25,14 +25,9 @@ return [
             'uri' => 'https://twitter.com/intent/tweet',
             //'text' => 'Default share text'
         ],
-        'snapchat' => [
-            'uri' => 'https://www.snapchat.com/add/username?',
-            //'text' => 'Default share text'
-        ],
-        'slack' => [
-            'uri' => 'http://slack.html/?URL=',
-            //'text' => 'Default share text'
-        ],
+//        'googlePlus' => [
+//            'uri' => 'https://plus.google.com/share?url=',
+//        ],
     ],
 
     /*

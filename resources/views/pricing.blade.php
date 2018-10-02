@@ -24,7 +24,7 @@
                             <li>
                                 <div class="radioButtons active">
                                     <label class="checkContainer">Free
-                                        <input type="radio" name="radio" checked="checked" value="1">
+                                        <input type="radio" class="planRadio" name="radio" checked="checked" value="1">
                                         <span class="checkmark"></span>
                                     </label>
                                     <span class="float-right rightSide">Free</span>
@@ -33,7 +33,7 @@
                             <li>
                                 <div class="radioButtons">
                                     <label class="checkContainer">Starter
-                                        <input type="radio" name="radio" value="2">
+                                        <input type="radio" class="planRadio"  name="radio" value="2">
                                         <span class="checkmark"></span>
                                     </label>
                                     <span class="float-right rightSide"> <span>$20</span>/<span>Month</span></span>
@@ -42,7 +42,7 @@
                             <li>
                                 <div class="radioButtons">
                                     <label class="checkContainer">Pro
-                                        <input type="radio" name="radio" value="3">
+                                        <input type="radio" class="planRadio" name="radio" value="3">
                                         <span class="checkmark"></span>
                                     </label>
                                     <span class="float-right rightSide"><span>$250</span>/<span>Month</span></span></span>
@@ -51,7 +51,7 @@
                             <li>
                                 <div class="radioButtons">
                                     <label class="checkContainer">Auto Starter
-                                        <input type="radio" name="radio" value="4">
+                                        <input type="radio" class="planRadio" name="radio" value="4">
                                         <span class="checkmark"></span>
                                     </label>
                                     <span class="float-right rightSide"><span>$750</span>/<span>Month</span></span></span>
@@ -60,7 +60,7 @@
                             <li>
                                 <div class="radioButtons">
                                     <label class="checkContainer">Auto Pro
-                                        <input type="radio" name="radio" value="5">
+                                        <input type="radio" class="planRadio" name="radio" value="5">
                                         <span class="checkmark"></span>
                                     </label>
                                     <span class="float-right rightSide"><span>$1000</span>/<span>Month</span></span></span>
@@ -71,21 +71,22 @@
                 </div>
                 <div class="col-md-6 offset-1">
                     <div id="myRadioGroup">
-                        <div id="radio1" class="desc wow slideInLef"  data-wow-duration="2s" >
-                            <div class="rightDiv">
-                                <h3>Free</h3>
-                                <div class="mainPoints mainPointsPricing">
-                                    <ul >
-                                        <li>Biweekly Crypto Newsletter</li>
-                                        <li>Updates on Satoshi Signals strategy performance</li>
-                                        <li>Free signal giveaway</li>
-                                    </ul>
+                            <div id="radio1" class="desc wow slideInLef"  data-wow-duration="2s" >
+                                <div class="rightDiv">
+                                    <h3>Free</h3>
+                                    <div class="mainPoints mainPointsPricing">
+                                        <ul>
+                                            <li>Biweekly Crypto Newsletter</li>
+                                            <li>Updates on Satoshi Signals strategy performance</li>
+                                            <li>Free signal giveaway</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="wrap">
+                                    <a class="btn-1">Check Out</a>
                                 </div>
                             </div>
-                            <div class="wrap">
-                                <a class="btn-1">Check Out</a>
-                            </div>
-                        </div>
+                        </form>
                         <div id="radio2" class="desc">
                             <div class="rightDiv">
                                 <h3>Starter</h3>

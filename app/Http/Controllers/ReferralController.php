@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Pdazcom\Referrals\Models\ReferralLink;
+use Slack;
 
 class ReferralController extends Controller
 {
@@ -21,4 +22,5 @@ class ReferralController extends Controller
         $referralLink = ReferralLink::where('user_id', $user->id)->first()->code;
         return view('referral')->with('referralLink', $referralLink);
     }
+
 }

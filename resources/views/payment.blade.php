@@ -2,7 +2,6 @@
 
 
 @section('content')
-
     <div class="w3-container">
         <div class="container">
             <div class="row">

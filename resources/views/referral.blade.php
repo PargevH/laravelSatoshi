@@ -28,10 +28,9 @@
                                                 echo Share::page('https://dev.restadviser.com/prog/prog32/public/register?ref='.$referralLink)
                                                     ->facebook()
                                                     ->twitter()
-                                                    ->snapchat()
-                                                    ->slack()
                                                 ?>
-                                                    <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://dev.restadviser.com/prog/prog32/public/register?ref={{$referralLink}}=&amp;title=my share text&amp;summary=dit is de linkedin summary" class="social-button linkedin :class" target="_blank" title="Linkedin" rel="nofollow"><span class="fa fa-linkedin"></span></a></li>
+                                                    <li><a href="https://plus.google.com/share?url=https://dev.restadviser.com/prog/prog32/public/register?ref{{$referralLink}}" class="social-button googlePlus :class" target="_blank" title="Google plus" rel="nofollow" id=":id"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://dev.restadviser.com/prog/prog32/public/register?ref{{$referralLink}}=&amp;title=my share text&amp;summary=dit is de linkedin summary" class="social-button linkedin :class" target="_blank" title="Linkedin" rel="nofollow"><i class="fa fa-linkedin"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>

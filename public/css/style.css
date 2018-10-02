@@ -190,89 +190,133 @@ ul.dropdown-menu.social-nav.show {
     margin: 20px 0;
 }
 
-a.snapchat:hover i {
-    color: yellow;
+/*a.snapchat:hover i {*/
+    /*color: yellow;*/
+/*}*/
+
+/*a.snapchat {*/
+    /*background-color: yellow;*/
+/*}*/
+
+/*.social-nav .snapchat {*/
+    /*text-shadow: 0px 0px #d6d20b,*/
+     /*1px 1px #d6d20b,*/
+     /*2px 2px #d6d20b,*/
+     /*3px 3px #d6d20b,*/
+     /*4px 4px #d6d20b,*/
+     /*5px 5px #d6d20b,*/
+     /*6px 6px #d6d20b,*/
+     /*7px 7px #d6d20b,*/
+     /*8px 8px #d6d20b,*/
+     /*9px 9px #d6d20b,*/
+     /*10px 10px #d6d20b,*/
+     /*11px 11px #d6d20b,*/
+     /*12px 12px #d6d20b,*/
+     /*13px 13px #d6d20b,*/
+     /*14px 14px #d6d20b,*/
+     /*15px 15px #d6d20b,*/
+     /*16px 16px #d6d20b,*/
+     /*17px 17px #d6d20b,*/
+     /*18px 18px #d6d20b,*/
+     /*19px 19px #d6d20b,*/
+     /*20px 20px #d6d20b,*/
+     /*21px 21px #d6d20b,*/
+     /*22px 22px #d6d20b,*/
+     /*23px 23px #d6d20b,*/
+     /*24px 24px #d6d20b,*/
+     /*25px 25px #d6d20b,*/
+     /*26px 26px #d6d20b,*/
+     /*27px 27px #d6d20b,*/
+     /*28px 28px #d6d20b,*/
+     /*29px 29px #d6d20b,*/
+     /*30px 30px #d6d20b;*/
+/*}*/
+
+/*a.slack:hover i {*/
+    /*color: #5d4088;*/
+/*}*/
+
+/*a.slack {*/
+    /*background-color: #5d4088;*/
+/*}*/
+
+/*.social-nav .slack {*/
+    /*text-shadow: 0px 0px #35244e,*/
+    /*1px 1px #35244e,*/
+    /*2px 2px #35244e,*/
+    /*3px 3px #35244e,*/
+    /*4px 4px #35244e,*/
+    /*5px 5px #35244e,*/
+    /*6px 6px #35244e,*/
+    /*7px 7px #35244e,*/
+    /*8px 8px #35244e,*/
+    /*9px 9px #35244e,*/
+    /*10px 10px #35244e,*/
+    /*11px 11px #35244e,*/
+    /*12px 12px #35244e,*/
+    /*13px 13px #35244e,*/
+    /*14px 14px #35244e,*/
+    /*15px 15px #35244e,*/
+    /*16px 16px #35244e,*/
+    /*17px 17px #35244e,*/
+    /*18px 18px #35244e,*/
+    /*19px 19px #35244e,*/
+    /*20px 20px #35244e,*/
+    /*21px 21px #35244e,*/
+    /*22px 22px #35244e,*/
+    /*23px 23px #35244e,*/
+    /*24px 24px #35244e,*/
+    /*25px 25px #35244e,*/
+    /*26px 26px #35244e,*/
+    /*27px 27px #35244e,*/
+    /*28px 28px #35244e,*/
+    /*29px 29px #35244e,*/
+    /*30px 30px #35244e;*/
+/*}*/
+
+
+a.googlePlus:hover i {
+    color: #DD4A3A;
 }
 
-a.snapchat {
-    background-color: yellow;
+a.googlePlus {
+    background-color: #DD4A3A;
 }
 
-.social-nav .snapchat {
-    text-shadow: 0px 0px #d6d20b,
-     1px 1px #d6d20b,
-     2px 2px #d6d20b,
-     3px 3px #d6d20b,
-     4px 4px #d6d20b,
-     5px 5px #d6d20b,
-     6px 6px #d6d20b,
-     7px 7px #d6d20b,
-     8px 8px #d6d20b,
-     9px 9px #d6d20b,
-     10px 10px #d6d20b,
-     11px 11px #d6d20b,
-     12px 12px #d6d20b,
-     13px 13px #d6d20b,
-     14px 14px #d6d20b,
-     15px 15px #d6d20b,
-     16px 16px #d6d20b,
-     17px 17px #d6d20b,
-     18px 18px #d6d20b,
-     19px 19px #d6d20b,
-     20px 20px #d6d20b,
-     21px 21px #d6d20b,
-     22px 22px #d6d20b,
-     23px 23px #d6d20b,
-     24px 24px #d6d20b,
-     25px 25px #d6d20b,
-     26px 26px #d6d20b,
-     27px 27px #d6d20b,
-     28px 28px #d6d20b,
-     29px 29px #d6d20b,
-     30px 30px #d6d20b;
+.social-nav .googlePlus {
+    text-shadow: 7px 0px #DD4A3A,
+    1px 1px #c23122,
+    2px 2px #c23122,
+    3px 3px #c23122,
+    4px 4px #c23122,
+    5px 5px #c23122,
+    6px 6px #c23122,
+    7px 7px #c23122,
+    8px 8px #c23122,
+    9px 9px #c23122,
+    10px 10px #c23122,
+    11px 11px #c23122,
+    12px 12px #c23122,
+    13px 13px #c23122,
+    14px 14px #c23122,
+    15px 15px #c23122,
+    16px 16px #c23122,
+    17px 17px #c23122,
+    18px 18px #c23122,
+    19px 19px #c23122,
+    20px 20px #c23122,
+    21px 21px #c23122,
+    22px 22px #c23122,
+    23px 23px #c23122,
+    24px 24px #c23122,
+    25px 25px #c23122,
+    26px 26px #c23122,
+    27px 27px #c23122,
+    28px 28px #c23122,
+    29px 29px #c23122,
+    30px 30px #c23122;
 }
 
-a.slack:hover i {
-    color: #5d4088;
-}
-
-a.slack {
-    background-color: #5d4088;
-}
-
-.social-nav .slack {
-    text-shadow: 0px 0px #35244e,
-    1px 1px #35244e,
-    2px 2px #35244e,
-    3px 3px #35244e,
-    4px 4px #35244e,
-    5px 5px #35244e,
-    6px 6px #35244e,
-    7px 7px #35244e,
-    8px 8px #35244e,
-    9px 9px #35244e,
-    10px 10px #35244e,
-    11px 11px #35244e,
-    12px 12px #35244e,
-    13px 13px #35244e,
-    14px 14px #35244e,
-    15px 15px #35244e,
-    16px 16px #35244e,
-    17px 17px #35244e,
-    18px 18px #35244e,
-    19px 19px #35244e,
-    20px 20px #35244e,
-    21px 21px #35244e,
-    22px 22px #35244e,
-    23px 23px #35244e,
-    24px 24px #35244e,
-    25px 25px #35244e,
-    26px 26px #35244e,
-    27px 27px #35244e,
-    28px 28px #35244e,
-    29px 29px #35244e,
-    30px 30px #35244e;
-}
 
 /* share*/
 
