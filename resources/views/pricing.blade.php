@@ -82,6 +82,9 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="wrap">
+                                <a class="btn-1">Check Out</a>
+                            </div>
                         </div>
                         <div id="radio2" class="desc">
                             <div class="rightDiv">
@@ -104,6 +107,9 @@
                                         <li>Digital asset news, price analysis, charts, and research</li>
                                     </ul>
                                 </div>
+                                <div class="wrap">
+                                    <a class="btn-1">Check Out</a>
+                                </div>
                             </div>
                         </div>
                         <div id="radio3" class="desc">
@@ -115,6 +121,9 @@
                                         (Bitcoin Long/Short, Momentum, Bitcoin Oversold)
                                     </p>
                                 </div>
+                            </div>
+                            <div class="wrap">
+                                <a class="btn-1">Check Out</a>
                             </div>
                         </div>
                         <div id="radio4" class="desc">
@@ -136,6 +145,9 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="wrap">
+                                <a class="btn-1">Check Out</a>
+                            </div>
                         </div>
                         <div id="radio5" class="desc">
                             <div class="rightDiv">
@@ -151,6 +163,9 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div class="wrap">
+                                <a class="btn-1">Check Out</a>
                             </div>
                         </div>
                     </div>

@@ -17,10 +17,10 @@ return [
         'facebook' => [
             'uri' => 'https://www.facebook.com/sharer/sharer.php?u=',
         ],
-        'linkedin' => [
-            'uri' => 'http://www.linkedin.com/shareArticle',
-            //'extra' => ['mini' => 'true']
-        ],
+//        'linkedin' => [
+//            'uri' => 'http://www.linkedin.com/shareArticle',
+//            'extra' => ['mini' => 'true']
+//        ],
         'twitter' => [
             'uri' => 'https://twitter.com/intent/tweet',
             //'text' => 'Default share text'
@@ -30,7 +30,7 @@ return [
             //'text' => 'Default share text'
         ],
         'slack' => [
-            'uri' => 'http://s7.addthis.com/static/slack.html?shareURL=',
+            'uri' => 'http://slack.html/?URL=',
             //'text' => 'Default share text'
         ],
     ],

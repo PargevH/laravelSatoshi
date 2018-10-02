@@ -10,7 +10,11 @@
         "jorenvanhocht/laravel-share": "^2.0",
         "laravel/framework": "5.7.*",
         "laravel/socialite": "^3.1",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "moontoast/math": "^1.1",
+        "paypal/rest-api-sdk-php": "^1.13",
+        "pdazcom/laravel-referrals": "^0.2.1",
+        "ramsey/uuid": "^3.8"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

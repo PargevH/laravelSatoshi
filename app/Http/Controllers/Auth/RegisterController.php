@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
+use Pdazcom\Referrals\Events\UserReferred;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Events\Registered;
@@ -75,9 +75,9 @@ class RegisterController extends Controller
         $this->validator($request->all())->validate();
 
         event(new Registered($user = $this->create($request->all())));
-
+        event(new UserReferred(request()->cookie('ref'), $user));
        // $this->guard()->login($user);
-
+        \Pdazcom\Referrals\Models\ReferralLink::create(['user_id' => $user->id, 'referral_program_id' => 1]);
         Session::flash('message', 'you are registered, please confirm your email address!');
         Session::flash('alert-class', 'alert-success');
         return $this->registered($request, $user)
@@ -86,11 +86,10 @@ class RegisterController extends Controller
 
     protected function create(array $data)
     {
-            return User::create([
+        return  User::create([
                 'name' => $data['name'],
                 'email' => $data['email'],
                 'password' => Hash::make($data['password']),
             ]);
     }
-
 }

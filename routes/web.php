@@ -29,7 +29,7 @@ Route::view('contact', 'contact')->name('contact');
 
 Route::view('payment', 'payment')->name('payment');
 
-Route::view('referral', 'referral')->name('referral');
+Route::get('referral', 'ReferralController@index')->name('referral');
 
 Route::get('users/{user}',  ['as' => 'users.edit', 'uses' => 'UserController@edit']);
 Route::patch('users/{user}/update',  ['as' => 'users.update', 'uses' => 'UserController@update']);
@@ -41,3 +41,8 @@ Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallb
 
 Route::get('home', 'HomeController@index')->name('home');
 
+Route::get('/', 'PaymentController@index')->name('paypalIndex');;
+
+Route::post('paypal', 'PaymentController@payWithpaypal')->name('paypal');
+
+Route::get('status', 'PaymentController@getPaymentStatus')->name('status');
