@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "935a28b15a8d8612401499557d896c84",
-    "content-hash": "acbab8ecc4c894e11876bd04df7d5a0a",
+    "hash": "a237ad1f057821ad2a9cc3ef9fccdfc6",
+    "content-hash": "c0ccf01d22c89582eed4675da4ecc78b",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -633,62 +633,6 @@
                 }
             ],
             "time": "2015-04-20 18:58:01"
-        },
-        {
-            "name": "jivesh/laravel-slack",
-            "version": "2.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gahlawat/laravel-slack.git",
-                "reference": "5bacf661bbf7a0796b792259b709925454e5ec71"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gahlawat/laravel-slack/zipball/5bacf661bbf7a0796b792259b709925454e5ec71",
-                "reference": "5bacf661bbf7a0796b792259b709925454e5ec71",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^6.3"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^3.6",
-                "phpunit/phpunit": "^7.0",
-                "squizlabs/php_codesniffer": "^3.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Gahlawat\\Slack\\SlackServiceProvider"
-                    ],
-                    "aliases": {
-                        "Slack": "Gahlawat\\Slack\\Facade\\Slack"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Gahlawat\\Slack\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jivesh Gahlawat",
-                    "email": "jiveshsg@gmail.com"
-                }
-            ],
-            "description": "A minimalist laravel integration for Slack",
-            "homepage": "https://gahlawat.github.io/laravel-slack",
-            "keywords": [
-                "laravel",
-                "slack"
-            ],
-            "time": "2018-04-04 07:50:09"
         },
         {
             "name": "jorenvanhocht/laravel-share",
@@ -1891,6 +1835,57 @@
                 "uuid"
             ],
             "time": "2018-07-19 23:38:55"
+        },
+        {
+            "name": "square/connect",
+            "version": "2.20180918.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/square/connect-php-sdk.git",
+                "reference": "3bf9e23ad0cff99747ca92267d15fc83d37bdec3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/square/connect-php-sdk/zipball/3bf9e23ad0cff99747ca92267d15fc83d37bdec3",
+                "reference": "3bf9e23ad0cff99747ca92267d15fc83d37bdec3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6.1",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SquareConnect\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Square, Inc.",
+                    "homepage": "https://squareup.com/developers"
+                }
+            ],
+            "description": "PHP client library for the Square Connect v2 API",
+            "homepage": "https://github.com/square/connect-php-sdk",
+            "keywords": [
+                "api",
+                "php",
+                "sdk",
+                "swagger"
+            ],
+            "time": "2018-09-18 17:54:18"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3195,6 +3190,62 @@
                 "test"
             ],
             "time": "2016-01-20 08:20:44"
+        },
+        {
+            "name": "jivesh/laravel-slack",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gahlawat/laravel-slack.git",
+                "reference": "5bacf661bbf7a0796b792259b709925454e5ec71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gahlawat/laravel-slack/zipball/5bacf661bbf7a0796b792259b709925454e5ec71",
+                "reference": "5bacf661bbf7a0796b792259b709925454e5ec71",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6",
+                "phpunit/phpunit": "^7.0",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Gahlawat\\Slack\\SlackServiceProvider"
+                    ],
+                    "aliases": {
+                        "Slack": "Gahlawat\\Slack\\Facade\\Slack"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gahlawat\\Slack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jivesh Gahlawat",
+                    "email": "jiveshsg@gmail.com"
+                }
+            ],
+            "description": "A minimalist laravel integration for Slack",
+            "homepage": "https://gahlawat.github.io/laravel-slack",
+            "keywords": [
+                "laravel",
+                "slack"
+            ],
+            "time": "2018-04-04 07:50:09"
         },
         {
             "name": "mockery/mockery",

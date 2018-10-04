@@ -2,6 +2,7 @@
 
 
 @section('content')
+
     <section class="pricing">
         <div class="content">
             <div class="row">
@@ -20,58 +21,34 @@
             <div class="row no-gutters">
                 <div class="col-md-5">
                     <div class="checkPrice">
-                        <ul id="myCheckbox">
-                            <li>
-                                <div class="radioButtons active">
-                                    <label class="checkContainer">Free
-                                        <input type="radio" class="planRadio" name="radio" checked="checked" value="1">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <span class="float-right rightSide">Free</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="radioButtons">
-                                    <label class="checkContainer">Starter
-                                        <input type="radio" class="planRadio"  name="radio" value="2">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <span class="float-right rightSide"> <span>$20</span>/<span>Month</span></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="radioButtons">
-                                    <label class="checkContainer">Pro
-                                        <input type="radio" class="planRadio" name="radio" value="3">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <span class="float-right rightSide"><span>$250</span>/<span>Month</span></span></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="radioButtons">
-                                    <label class="checkContainer">Auto Starter
-                                        <input type="radio" class="planRadio" name="radio" value="4">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <span class="float-right rightSide"><span>$750</span>/<span>Month</span></span></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="radioButtons">
-                                    <label class="checkContainer">Auto Pro
-                                        <input type="radio" class="planRadio" name="radio" value="5">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <span class="float-right rightSide"><span>$1000</span>/<span>Month</span></span></span>
-                                </div>
-                            </li>
+                        <ul id="myCheckbox" class="checkboxUl">
+                            @foreach($plan as $k => $v)
+                                <li>
+                                    <div class="radioButtons <?php
+                                     if ($v['price'] == 0){
+                                        echo 'active';
+                                     }
+                                     ?>">
+                                        <label class="checkContainer">{{$k}}
+                                            <input type="radio" class="planRadio" name="radio"
+                                            <?php
+                                            if ($v['price'] == 0){
+                                                echo "checked='checked'";
+                                            }
+                                            ?>
+                                             value="{{$v['title']}}">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <span class="float-right rightSide"><span>${{$v['price']}}</span>/<span>Month</span></span></span>
+                                    </div>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 offset-1">
                     <div id="myRadioGroup">
-                            <div id="radio1" class="desc wow slideInLef"  data-wow-duration="2s" >
+                            <div id="radiofree" class="desc wow slideInLef"  data-wow-duration="2s" >
                                 <div class="rightDiv">
                                     <h3>Free</h3>
                                     <div class="mainPoints mainPointsPricing">
@@ -87,7 +64,7 @@
                                 </div>
                             </div>
                         </form>
-                        <div id="radio2" class="desc">
+                        <div id="radiostarter" class="desc">
                             <div class="rightDiv">
                                 <h3>Starter</h3>
                                 <div class="mainPoints mainPointsPricing">
@@ -113,7 +90,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="radio3" class="desc">
+                        <div id="radiopro" class="desc">
                             <div class="rightDiv">
                                 <h3>Pro</h3>
                                 <div class="mainPoints mainPointsPricing">
@@ -127,7 +104,7 @@
                                 <a class="btn-1">Check Out</a>
                             </div>
                         </div>
-                        <div id="radio4" class="desc">
+                        <div id="radioautoStarter" class="desc">
                             <div class="rightDiv">
                                 <h3>Automated Starter</h3>
                                 <div class="mainPoints mainPointsPricing">
@@ -150,7 +127,7 @@
                                 <a class="btn-1">Check Out</a>
                             </div>
                         </div>
-                        <div id="radio5" class="desc">
+                        <div id="radioautoPro" class="desc">
                             <div class="rightDiv">
                                 <h3>Automated Pro (Q4 2018)</h3>
                                 <div class="mainPoints mainPointsPricing">

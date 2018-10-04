@@ -26,6 +26,22 @@
     <link rel="stylesheet" href="{{ asset('css/libs/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/libs/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+
+
+
+
+
+
+
+    <!-- link to the custom styles for SqPaymentForm -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/sqpaymentform.css') }}">
+
+
+
+
+
+
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light main-navbar">
@@ -68,16 +84,13 @@
                                            </button>
                                         <ul class="dropdown-menu dropdown-name-menu" role="menu" aria-labelledby="menu1">
                                             <li  role="presentation">
-                                                <a role="menuitem" tabindex="-1" href="#">My Subscriptions</a>
+                                                <a role="menuitem" tabindex="-1" href="{{route('subscriptions')}}">My Subscriptions</a>
                                             </li>
                                             <li role="presentation">
                                                 <a role="menuitem" tabindex="-1" href="{{route('referral')}}">Referrals</a>
                                             </li>
                                             <li role="presentation">
                                                 <a role="menuitem" tabindex="-1" href="{{route('users.edit', $user_id = Auth::user()->id)}}">Account Settings</a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a role="menuitem" tabindex="-1" href="{{route('payment')}}">Payment</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -190,6 +203,20 @@
                 </div>
             </div>
         </div>
+        <!-- link to the local SqPaymentForm initialization -->
+
+
+        <!-- link to the SqPaymentForm library -->
+        <script type="text/javascript" src="https://js.squareup.com/v2/paymentform">
+        </script>
+
+        <!-- link to the local SqPaymentForm initialization -->
+        <script type="text/javascript" src="{{ asset('js/sqpaymentform.js') }}"></script>
+
+
+
+
+
         <script src="{{ asset('js/otherjs/jquery-3.3.1.min.js') }}"></script>
         {{--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>--}}
         <script src="{{ asset('js/share.js') }}"></script>

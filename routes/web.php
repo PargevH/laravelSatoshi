@@ -19,6 +19,8 @@ Route::view('index', 'index')->name('index');
 
 Route::view('pricing', 'pricing')->name('pricing');
 
+Route::get('pricing', 'PricingController@index')->name('pricing');
+
 Route::view('resources', 'resources')->name('resources');
 
 Route::view('news', 'news')->name('news');
@@ -27,7 +29,7 @@ Route::view('policy', 'policy')->name('policy');
 
 Route::view('contact', 'contact')->name('contact');
 
-Route::view('payment', 'payment')->name('payment');
+Route::view('subscriptions', 'subscriptions')->name('subscriptions');
 
 Route::get('payment', 'PaymentController@index')->name('payment');
 
