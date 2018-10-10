@@ -2111,8 +2111,17 @@ div.mainPointsPricing ul  li:before {
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
+    section.cryptoHome .cryptoMarkets .learnMore .btn, section.cryptoHome .cryptoMarkets .learnMore .btn-def{
+        margin:10px 0;
+    }
+
     section.prices {
         padding-top: 50px;
+    }
+
+    section.cryptoHome .cryptoMarkets {
+        margin-top: 50px;
+        width: 100%;
     }
 
     section.prices:first-child {
@@ -2133,13 +2142,9 @@ div.mainPointsPricing ul  li:before {
     }
 
     section.cryptoHome {
+        padding-top:0;
         height: auto;
         background-position: left;
-    }
-
-    section.cryptoHome .cryptoMarkets {
-        margin-top: 100px;
-        width: 100%;
     }
 
     section.cryptoHome .cryptoMarkets h1 {

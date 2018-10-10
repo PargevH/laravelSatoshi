@@ -27,21 +27,6 @@
     <link rel="stylesheet" href="{{ asset('css/libs/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-
-
-
-
-
-
-
-    <!-- link to the custom styles for SqPaymentForm -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/sqpaymentform.css') }}">
-
-
-
-
-
-
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light main-navbar">
@@ -192,9 +177,9 @@
                 <div class="col-md-12">
                     <div class="socialLinks">
                         <ul class="socialIcons">
-                            <li class="facebook"><a href="#"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
-                            <li class="twitter"><a href="#"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
-                            <li class="instagram"><a href="#"><i class="fa fa-fw fa-google-plus"></i>google plus</a></li>
+                            <li class="facebook"><a href=""><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+                            <li class="twitter"><a href=""><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+                            <li class="instagram"><a href=""><i class="fa fa-fw fa-google-plus"></i>google plus</a></li>
                         </ul>
                     </div>
                     <div class="copyRight">
@@ -203,19 +188,6 @@
                 </div>
             </div>
         </div>
-        <!-- link to the local SqPaymentForm initialization -->
-
-
-        <!-- link to the SqPaymentForm library -->
-        <script type="text/javascript" src="https://js.squareup.com/v2/paymentform">
-        </script>
-
-        <!-- link to the local SqPaymentForm initialization -->
-        <script type="text/javascript" src="{{ asset('js/sqpaymentform.js') }}"></script>
-
-
-
-
 
         <script src="{{ asset('js/otherjs/jquery-3.3.1.min.js') }}"></script>
         {{--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>--}}

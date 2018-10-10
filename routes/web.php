@@ -27,7 +27,8 @@ Route::view('news', 'news')->name('news');
 
 Route::view('policy', 'policy')->name('policy');
 
-Route::view('contact', 'contact')->name('contact');
+Route::get('contact', 'ContactUSController@contactUS')->name('contact');
+Route::post('contact', ['as'=>'contactus.store','uses'=>'ContactUSController@contactUSPost'])->name('contact');
 
 Route::view('subscriptions', 'subscriptions')->name('subscriptions');
 
@@ -44,8 +45,6 @@ Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('home', 'HomeController@index')->name('home');
-
-Route::get('/', 'PaymentController@index')->name('paypalIndex');;
 
 Route::post('paypal', 'PaymentController@payWithpaypal')->name('paypal');
 

@@ -34,25 +34,33 @@
             <div class="col-md-6">
                 <div class="columeTitle">
                     <h3>Contact Form</h3>
+                    @if(session()->has('success'))
+                        <div class="alert alert-success">
+                            {{ session()->get('success') }}
+                        </div>
+                    @endif
                 </div>
                 <div class="mainForm">
-                    <form>
+                    <form method="POST" action="{{route('contact')}}">
+
+                    @csrf
+
                         <div class="form-group">
                             <label for="name" class="sr-only"></label>
-                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+                            <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name" required>
                         </div>
 
                         <div class="form-group">
                             <label for="email" class="sr-only"></label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                         </div>
 
                         <div class="form-group">
                             <label for="message" class="sr-only"></label>
-                            <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="7" placeholder="Message" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary float-right">Send</button>
+                        <button name="submit" class="btn btn-primary float-right">Send</button>
                     </form>
                 </div>
             </div>

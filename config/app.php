@@ -13,8 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-
+    'name' => 'SatoshiSignals',
     /*
     |--------------------------------------------------------------------------
     | Application Environment
